@@ -11,11 +11,7 @@ router.get('/register', function(req, res, next){
 // login
 router.get('/login', authController.login_page);
 
-router.post('/login', passport.authenticate('local', {
-    successRedirect: '/',
-    failureRedirect: '/login',
-    failureFlash: true
-}));
+router.post('/login', authController.login_auth);
 
 
 // router.post('/login', authController.login_auth);
