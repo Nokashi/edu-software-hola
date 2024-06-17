@@ -8,6 +8,8 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const session = require('express-session');
 const User = require('./models/user');
+const flash = require('connect-flash');
+
 
 async function connectDB() {
   await mongoose.connect('mongodb://localhost:27017/edu-software-hola')
@@ -47,6 +49,13 @@ app.use(session({
   resave: false,
   saveUninitialized: false
 }));
+app.use(flash());
+app.use((req, res, next) => {
+  res.locals.error = req.flash('error');
+  res.locals.success = req.flash('success');
+  next();
+});
+
 
 // AUTHENTICATION SETUP
 // %%%%%%%%%%%%%%%

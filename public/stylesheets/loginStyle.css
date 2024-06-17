@@ -1,0 +1,19 @@
+/* CSS for error message */
+.alert-danger {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red text */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb; /* Medium red border */
+    border-radius: 4px;
+}
+
+/* CSS for success message */
+.alert-success {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green text */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c3e6cb; /* Medium green border */
+    border-radius: 4px;
+}

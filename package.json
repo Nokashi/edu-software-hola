@@ -8,6 +8,7 @@
     "serverstart": "DEBUG=edu-software-hola:* npm run devstart"
   },
   "dependencies": {
+    "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "^3.1.10",
