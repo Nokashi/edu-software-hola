@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-
+const authController = require("../controllers/authController");
+const passport = require('passport');
 
 // registration
 router.get('/register', function(req, res, next){
@@ -8,9 +9,16 @@ router.get('/register', function(req, res, next){
 })
 
 // login
-router.get('/login', function(req, res, next){
-    res.send("NOT IMPLEMENTED: Login page")
-})
+router.get('/login', authController.login_page);
+
+router.post('/login', passport.authenticate('local', {
+    successRedirect: '/',
+    failureRedirect: '/login',
+    failureFlash: true
+}));
+
+
+// router.post('/login', authController.login_auth);
 
 // TODO router.get('/logout')
 

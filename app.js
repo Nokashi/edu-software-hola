@@ -4,6 +4,10 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose')
+const passport = require('passport');
+const LocalStrategy = require('passport-local');
+const session = require('express-session');
+const User = require('./models/user');
 
 async function connectDB() {
   await mongoose.connect('mongodb://localhost:27017/edu-software-hola')
@@ -16,6 +20,8 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
   console.log('Connected to MongoDB');
 });
+
+
 
 // import routers
 
@@ -36,6 +42,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
+app.use(session({
+  secret: 'cat keyboard meow',
+  resave: false,
+  saveUninitialized: false
+}));
+
+// AUTHENTICATION SETUP
+// %%%%%%%%%%%%%%%
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+// %%%%%%%%%%%%%%%
 
 app.use('/', landingRouter);
 app.use('/', authRouter);
