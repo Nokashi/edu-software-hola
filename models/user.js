@@ -6,13 +6,13 @@ const Schema = mongoose.Schema;
 const UserSchema = new Schema({
     first_name: {type: String, required: true, maxLength: 100},
     surname: {type: String, required: true, maxLength: 100},
-    username: {type: String, required: true, maxLength: 20},
+    username: {type: String, required: true, maxLength: 20, unique: true},
     email: {type: String, required: true, unique: true},
     year_of_birth: {type: Number},
     average_grade: {type: Number, default: 0},
     performance_history: [{
-        quiz_chapter: {type: Number, required: true},
-        grade: {type: Number, required: true},
+        quiz_chapter: {type: Number},
+        grade: {type: Number},
         quiz_date: {type: Date, default: Date.now}, 
     }]
 })

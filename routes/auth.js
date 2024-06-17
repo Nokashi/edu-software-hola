@@ -13,6 +13,8 @@ router.get('/register', function(req, res, next){
     }
 })
 
+router.post('/register', authController.registration_auth);
+
 // login
 router.get('/login', authController.login_page);
 
