@@ -23,6 +23,7 @@ const landingRouter = require('./routes/landing');
 const usersRouter = require('./routes/users');
 const coursesRouter = require('./routes/courses');
 const quizzesRouter = require('./routes/quizzes');
+const authRouter = require('./routes/auth');
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', landingRouter);
+app.use('/', authRouter);
 app.use('/users', usersRouter);
 app.use('/courses', coursesRouter);
 app.use('/quizzes', quizzesRouter);
