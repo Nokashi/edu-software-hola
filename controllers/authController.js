@@ -28,7 +28,12 @@ exports.login_page = asyncHandler(async (req, res, next) => {
 });
 
 exports.register_page = asyncHandler(async (req, res, next) => {
-    res.render('register', {error: null});
+    if(req.isAuthenticated()) {
+        res.send("you are already authenticated")
+    }
+    else{
+        res.render('register')
+    }
 })
 
 exports.registration_auth = asyncHandler(async (req, res, next) => {

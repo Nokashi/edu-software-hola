@@ -4,14 +4,7 @@ const authController = require("../controllers/authController");
 const passport = require('passport');
 
 // registration
-router.get('/register', function(req, res, next){
-    if(req.isAuthenticated()) {
-        res.send("you are already authenticated")
-    }
-    else{
-        res.render('register')
-    }
-})
+router.get('/register', authController.register_page);
 
 router.post('/register', authController.registration_auth);
 
