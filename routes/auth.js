@@ -13,6 +13,7 @@ router.get('/login', authController.login_page);
 
 router.post('/login', authController.login_auth);
 
+router.post('/logout', authController.logout_page);
 
 // router.post('/login', authController.login_auth);
 

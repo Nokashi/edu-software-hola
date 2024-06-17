@@ -66,3 +66,10 @@ exports.registration_auth = asyncHandler(async (req, res, next) => {
     console.log(`User ${email} registered successfully!`);
     res.render('register-success');
 });
+
+exports.logout_page = asyncHandler(async (req, res, next) => {
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.render('logout');
+    });
+})

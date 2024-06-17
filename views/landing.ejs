@@ -8,7 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>ΠΟΥ ΠΑΣ ΡΕ ΚΑΡΑΜΗΤΡΟ ΞΥΠΟΛΥΤΟΣ ΣΤΑ ΚΑΡΒΟΥΝΑ</h1>
+        <% if(isAuthenticated) { %>
+            <h1>ΚΑΛΗΣΠΕΡΑ <%= user.username %></h1>
+        <% } else { %>    
+            <h1>ΠΟΥ ΠΑΣ ΡΕ ΚΑΡΑΜΗΤΡΟ ΞΥΠΟΛΥΤΟΣ ΣΤΑ ΚΑΡΒΟΥΝΑ</h1>
+        <% } %>
     </header>
     <main>
         <section class="features">
@@ -24,6 +28,11 @@
             <p>ΚΑΝΕ ΕΓΓΡΑΦΗ ΤΩΡΑ</p>
             <a href="/register" class="btn">ΓΡΑΨΟΥ</a>
             <a href="/login" class="btn">ΜΠΕΣ ΜΕΣΑ</a>
+            <% if (isAuthenticated) { %>
+                <form action="/logout" method="POST" class="btn">
+                    <button type="submit">ΦΥΓΕ</button>
+                </form>   
+            <% } %>
         </section>
     </main>
     <footer>
