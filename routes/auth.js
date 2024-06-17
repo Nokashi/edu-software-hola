@@ -5,7 +5,12 @@ const passport = require('passport');
 
 // registration
 router.get('/register', function(req, res, next){
-    res.send("NOT IMPLEMENTED: Sign Up page");
+    if(req.isAuthenticated()) {
+        res.send("you are already authenticated")
+    }
+    else{
+        res.render('register')
+    }
 })
 
 // login
