@@ -28,9 +28,10 @@
             <p>ΚΑΝΕ ΕΓΓΡΑΦΗ ΤΩΡΑ</p>
             <a href="/register" class="btn">ΓΡΑΨΟΥ</a>
             <a href="/login" class="btn">ΜΠΕΣ ΜΕΣΑ</a>
+            <a href="/courses" class="btn">ΜΑΘΗΜΑΤΑ</a>
             <% if (isAuthenticated) { %>
-                <form action="/logout" method="POST" class="btn">
-                    <button type="submit">ΦΥΓΕ</button>
+                <form action="/logout" method="POST" >
+                    <button type="submit" class="btn">ΦΥΓΕ</button>
                 </form>   
             <% } %>
         </section>
