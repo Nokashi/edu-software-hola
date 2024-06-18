@@ -11,3 +11,23 @@ const courses = [
 exports.course_list = asyncHandler(async (req, res, next) => {
     res.render('courses', {courses});
 })
+
+exports.course1 = asyncHandler(async (req, res, next) => {
+    res.render('course1');
+
+})
+
+exports.course1 = asyncHandler(async (req, res, next) => {
+    res.render('course2');
+
+})
+
+exports.course1 = asyncHandler(async (req, res, next) => {
+    res.render('course3');
+
+})
+
+exports.course1 = asyncHandler(async (req, res, next) => {
+    res.render('course4');
+
+})
