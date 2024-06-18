@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const quizController = require('../controllers/quizController');
 
 
 // Quiz List
-router.get('/', function(req, res, next){
-    res.send("NOT IMPLEMENTED: Quiz List")
-})
+router.get('/', quizController.quiz_list);
 
 // %% QUIZ PAGES %%
 

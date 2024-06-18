@@ -30,6 +30,7 @@
             <a href="/login" class="btn">ΜΠΕΣ ΜΕΣΑ</a>
             <a href="/courses" class="btn">ΜΑΘΗΜΑΤΑ</a>
             <% if (isAuthenticated) { %>
+                <a href="/quizzes" class="btn">ΤΕΣΤΑΚΙΑ</a>
                 <form action="/logout" method="POST" >
                     <button type="submit" class="btn">ΦΥΓΕ</button>
                 </form>   

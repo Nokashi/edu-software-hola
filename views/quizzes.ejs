@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./stylesheets/listStyle.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <h1>Courses</h1>
+    <h1>Quizzes</h1>
+    <p>Test your Knowledge!</p>
     <ul>
-        <% courses.forEach(course => { %>
+        <% quizzes.forEach(quiz => { %>
             <li>
-                <a href="<%= `courses/chapter${course.id}`%>"><%= course.title %></a>
-                <p><%= course.description %></p>
-                <p>Level: <%= course.level %></p>
+                <a href="<%= `quizzes/quiz${quiz.id}`%>"><%= quiz.title %></a>
+                <p><%= quiz.description %></p>
             </li>
         <% }) %>
     </ul>
