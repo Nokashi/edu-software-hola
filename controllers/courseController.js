@@ -17,17 +17,17 @@ exports.course1 = asyncHandler(async (req, res, next) => {
 
 })
 
-exports.course1 = asyncHandler(async (req, res, next) => {
+exports.course2 = asyncHandler(async (req, res, next) => {
     res.render('course2');
 
 })
 
-exports.course1 = asyncHandler(async (req, res, next) => {
+exports.course3 = asyncHandler(async (req, res, next) => {
     res.render('course3');
 
 })
 
-exports.course1 = asyncHandler(async (req, res, next) => {
+exports.course4 = asyncHandler(async (req, res, next) => {
     res.render('course4');
 
 })
