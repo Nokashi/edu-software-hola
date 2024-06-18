@@ -30,6 +30,8 @@
             <a href="/login" class="btn">ΜΠΕΣ ΜΕΣΑ</a>
             <a href="/courses" class="btn">ΜΑΘΗΜΑΤΑ</a>
             <% if (isAuthenticated) { %>
+                <a href= "<%= user.url %>" class="btn">ΕΣΥ</a>
+                <a href="/users" class="btn">ΤΑ ΜΠΟΥΜΠΟΥΚΙΑ ΜΑΣ</a>
                 <a href="/quizzes" class="btn">ΤΕΣΤΑΚΙΑ</a>
                 <form action="/logout" method="POST" >
                     <button type="submit" class="btn">ΦΥΓΕ</button>

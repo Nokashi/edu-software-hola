@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - <%= user.username %></title>
+    <link rel="stylesheet" href="../stylesheets/profileStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile - <%= user.username %></h1>
+        <div class="profile">
+            <div class="user-info">
+                <p><strong>Name:</strong> <%= user.first_name %> <%= user.surname %></p>
+                <p><strong>Username:</strong> <%= user.username %></p>
+                <p><strong>Email:</strong> <%= user.email %></p>
+                <% if (user.year_of_birth) { %>
+                    <p><strong>Year of Birth:</strong> <%= user.year_of_birth %></p>
+                <% } %>
+                <p><strong>Average Grade:</strong> <%= user.average_grade %></p>
+                <h2>Performance History</h2>
+                <% if (user.performance_history.length > 0) { %>
+                    <ul>
+                        <% user.performance_history.forEach(history => { %>
+                            <li>
+                                <p><strong>Quiz Chapter:</strong> <%= history.quiz_chapter %></p>
+                                <p><strong>Grade:</strong> <%= history.grade %></p>
+                                <p><strong>Quiz Date:</strong> <%= history.quiz_date.toDateString() %></p>
+                            </li>
+                        <% }) %>
+                    </ul>
+                <% } else { %>
+                    <p>No performance history available.</p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

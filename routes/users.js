@@ -1,14 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const userController = require('../controllers/userController');
 
 // GET Request for user list
-router.get('/', function(req, res, next) {
-  res.send('NOT IMPLEMENTED: users list');
-});
+router.get('/', userController.user_list);
 
 // get profile of id given as parameter
-router.get('/:id', function (req, res, next){
-  res.send(`NOT IMPLEMENTED: Profile of ${req.params.id}`);
-});
+router.get('/:id', userController.profile);
+
 
 module.exports = router;
