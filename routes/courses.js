@@ -1,10 +1,9 @@
 const express = require('express');
+const courseController = require('../controllers/courseController');
 const router = express.Router();
 
 // Courses list
-router.get('/', function(req, res, next){
-    res.send("NOT IMPLEMENTED: courses list");
-})
+router.get('/', courseController.course_list);
 
 // chapter 1
 router.get('/chapter1', function(req, res, next){
