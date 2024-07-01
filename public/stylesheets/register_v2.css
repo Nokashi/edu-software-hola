@@ -1,0 +1,103 @@
+html {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 15px;
+  }
+  
+  body {
+    /* Spanish flag background */
+    background: linear-gradient(to bottom, 
+                                #c60b1e 33.33%,  /* Red top */
+                                #ffc400 33.33%,  /* Yellow middle */
+                                #ffc400 66.66%,  /* Yellow middle */
+                                #c60b1e 66.66%); /* Red bottom */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  /* Form styling */
+  form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.695); /* Semi-transparent background for readability */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black; /* Text color for readability */
+  }
+  
+  fieldset {
+    border: 5px dotted #000000;
+    margin: 10px 5px;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;  
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #5796d8;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p, h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  legend {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Styles for form-group, making sure the fields are in two columns */
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-column, .right-column {
+    flex: 1;
+  }
+  
+  /* Margin to create space between columns */
+  .left-column {
+    margin-right: 20px;
+  }
+  
+  /* Each form field's style */
+  .form-group > div > div {
+    margin-bottom: 15px;
+  }
+  
+  footer{
+    color: white;
+  }

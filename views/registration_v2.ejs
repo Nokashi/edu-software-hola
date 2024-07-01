@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="gr">
+  <head>
+    <meta charset="utf-8">
+    <title>Εγγραφή χρήστη</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="registration page">
+    <link rel="stylesheet" href="stylesheets/register_v2.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="script.js"></script> -->
+  </head>
+  <body>
+    <header>
+        <h1>Εγγραφή Νέου χρήστη</h1>
+    </header>
+    <main>
+        <!--form initiation-->
+        <form id="registration" action="">
+            <!--a container for the left side-->
+            <div class="form-container">
+                <!--Basic Information-->
+                <fieldset id="basic-info">
+                    <legend>Βασικές Πληροφορίες</legend>
+                    <!--a group to create 2 columns-->
+                    <div class="form-group">
+                        <!--first and last name on the left-->
+                        <div class="left-column">
+                            <div class="first-name">
+                                <label id="name-label" for="name">Όνομα</label>
+                                <input id="name" type="text" name="first_name" placeholder="Το όνομα σας" required>
+                            </div>
+                            <div class="last-name">
+                                <label id="surname=label" for="surname">Επώνυμο</label>
+                                <input id="surname" type="text" name="surname" placeholder="Το επίθετο σας" required>
+                            </div>
+                        </div>
+                        <!--email and dob on the right-->
+                        <div class="right-column">
+                            <div class="email">
+                                <label id="email" for="email">Email</label>
+                                <input id="email" type="email" name="email" placeholder="Το email σας" required>
+                               </div>
+                               <div class="age">
+                                <label id="dob" for="dob">Χρονολογία Γέννησης</label>
+                                <input id="dob" type="number" name="year_of_birth" placeholder="Ημερομηνία Γέννησης">
+                               </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <!--Account Details-->
+                <fieldset id="account-details">
+                    <legend>Στοιχεία Λογαριασμού</legend>
+                    <div class="username">
+                        <label id="username" for="username">Όνομα χρήστη</label>
+                        <input id="username" type="text" placeholder="Το όνομα χρήστη σας" required>
+                    </div>
+                    <div class="password">
+                        <label id="password" for="password">Κωδικός Πρόσβασης</label>
+                        <input id="password" type="password" name="password" placeholder="Κωδικός Πρόσβασης" required>
+                        <label class="confirm-password" for="confirm-password">Επιβεβαίωση Κωδικού Πρόσβασης</label>
+                        <input id="confirm-password" type="password" name="confirmPassword" placeholder="Κωδικός Πρόσβασης" required>
+                    </div>
+                </fieldset>
+            </div>
+            <!--questionnaire on the right side-->
+            <fieldset id="questionnaire">
+                <legend>Ερωτηματολόγιο</legend>
+                <p>Σε αυτό το σημείο, θα θέλαμε να σας κάνουμε κάποιες σύντομες ερωτήσεις.<br>
+                    Έτσι, θα μπορέσουμε να διαμορφώσουμε την εμπειρία σας, και να την φέρουμε στα μέτρα σας!
+                </P>
+                <div class="question">
+                    <label id="q1" for="q1"><strong>Ερώτηση 1:</strong> Ποιά είναι η πρωτεύουσα της Ισπανίας;<br></label>
+                    <label for="answer1"><input type="radio" id="q1a1" name="a1" value="madrid" required>Μαδρίτη</label>
+                    <label for="answer2"><input type="radio" id="q1a2" name="a1" value="barcelone" required>Βαρκελώνη</label>
+                    <label for="answer3"><input type="radio" id="q1a3" name="a1" value="seville" required>Σεβίλλη</label>
+                    <label for="answer4"><input type="radio" id="q1a4" name="a1" value="malaga" required>Μάλαγα</label>
+                </div>
+                <br />
+                <div class="question">
+                    <label id="q2" for="q2"><strong>Ερώτηση 2:</strong> Που βρίσκεται η "Sagrada Familia";<br></label>
+                    <label for="answer1"><input type="radio" id="q2a1" name="a2" value="granada" required>Γρανάδα</label>
+                    <label for="answer2"><input type="radio" id="q2a2" name="a1" value="madrid" required>Μαδρίτη</label>
+                    <label for="answer3"><input type="radio" id="q2a3" name="a1" value="mallorca" required>Μαγιόρκα</label>
+                    <label for="answer4"><input type="radio" id="q2a4" name="a1" value="barcelone" required>Βαρκελώνη</label>
+                </div>
+                <div class="question">
+                    <label id="q3" for="q3"><strong>Ερώτηση 4:</strong>Εύκολη γραμματικής</label>
+                </div>
+                <div class="question">
+                    <label id="q4" for="q4"><strong>Ερώτηση 4:</strong>Δύσκολη γραμματικής</label>
+                </div>
+                <div class="question">
+                    <label id="q5" for="q5"><strong>Ερώτηση 5:</strong>Εύκολη επικοινωνίας</label>
+                </div>
+                <div class="question">
+                    <label id="q6" for="q6"><strong>Ερώτηση 6:</strong>Δύσκολη επικοινωνίας</label>
+                </div>
+            </fieldset>
+            <div class="button-container">
+                <button type="reset" id="reset">Καθαρισμός πεδίων</button>
+                <button type="submit" id="submit">Ολοκλήρωση εγγραφής</button>
+            </div>
+        </form>
+        <footer>
+            <p>Απαλλακτική Εργασία "Εκπαιδευτικό Λογισμικό" - 2024<br><br>
+                Π12182 - Π16069 <br>
+                Π17088 - Π20092
+            </p>
+        </footer>
+    </main>
+  </body>
+</html>

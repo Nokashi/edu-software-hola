@@ -36,6 +36,15 @@ exports.register_page = asyncHandler(async (req, res, next) => {
     }
 })
 
+exports.register_page_bill =  asyncHandler(async (req, res, next) => {
+    if(req.isAuthenticated()) {
+        res.send("you are already authenticated")
+    }
+    else{
+        res.render('registration_v2')
+    }
+})
+
 exports.registration_auth = asyncHandler(async (req, res, next) => {
     const { first_name, surname, username, email, year_of_birth, password, confirmPassword } = req.body;
 

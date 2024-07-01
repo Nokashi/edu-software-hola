@@ -4,6 +4,6 @@ const landingController = require('../controllers/landingController');
 
 
 // GET request to get landing page, renders landing.ejs
-router.get('/', landingController.landing_page);
+router.get('/', landingController.landing_page_bill);
 
 module.exports = router;
