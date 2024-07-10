@@ -31,3 +31,4 @@ exports.course4 = asyncHandler(async (req, res, next) => {
     res.render('course4');
 
 })
+

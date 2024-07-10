@@ -8,3 +8,7 @@ exports.landing_page_bill = asyncHandler(async (req, res, next) => {
     res.render('nav_menu');
 })
 
+exports.courses_preview = asyncHandler(async (req, res, next) => {
+    res.render('courses-preview');
+})
+
