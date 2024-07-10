@@ -8,12 +8,16 @@ router.get('/register', authController.register_page_bill);
 
 router.post('/register', authController.registration_auth);
 
+router.get('/register-success', authController.register_success)
+
 // login
 router.get('/login', authController.login_page);
 
 router.post('/login', authController.login_auth);
 
 router.post('/logout', authController.logout_page);
+
+router.get('/logout', authController.logout_page)
 
 // router.post('/login', authController.login_auth);
 

@@ -9,7 +9,7 @@ exports.login_auth = (req, res, next) => {
             return next(err); 
         }
         if (!user) { 
-            req.flash('error', 'Invalid username or password');
+            req.flash('error', 'Μη έγκυρο όνομα χρήστη ή Κωδικός');
             return res.redirect('/login'); 
         }
         req.logIn(user, (err) => {
@@ -24,7 +24,7 @@ exports.login_auth = (req, res, next) => {
 };
 
 exports.login_page = asyncHandler(async (req, res, next) => {
-    res.render('login');
+    res.render('login_v2');
 });
 
 exports.register_page = asyncHandler(async (req, res, next) => {
@@ -50,16 +50,16 @@ exports.registration_auth = asyncHandler(async (req, res, next) => {
 
     const existingUsername = await User.findOne({username});
     if (existingUsername) {
-        return res.render('register', { error: 'Username already exists. Please choose a different one.' });
+        return res.render('register', { error: 'Το ονομα χρήστη υπάρχει ήδη!' });
     }
 
     const existingEmail = await User.findOne({email});
     if (existingEmail) {
-        return res.render('register', { error: 'Email already exists. Please choose a different one.' });
+        return res.render('register', { error: 'Το E-Mail υπάρχει ήδη' });
     }
 
     if (password !== confirmPassword) {
-        return res.render('register', { error: 'Passwords do not match. Please try again.' });
+        return res.render('register', { error: 'Οι κωδικοί πρόσβασης δεν είναι ίδιοι' });
     }
 
     const newUser = new User({
@@ -81,4 +81,8 @@ exports.logout_page = asyncHandler(async (req, res, next) => {
         if (err) { return next(err); }
         res.render('logout');
     });
+})
+
+exports.register_success = asyncHandler(async (req, res, next) => {
+    res.render('register-success')
 })

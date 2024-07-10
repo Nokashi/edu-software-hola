@@ -17,22 +17,30 @@
         <div class="container">
             <aside class="sidebar">
                 <div class="sidebar-header">
-                    <h2>¡Hola!</h2>
+                    <% if(isAuthenticated) { %>
+                        <h2>¡Hola <%= user.username %>!</h2>
+                    <% } else { %>    
+                        <h2>¡Hola!</h2>
+                    <% } %>
+                </header>
+                    
                 </div>
                 <ul class="sidebar-links">
                     <h4>Μενού</h4>
+                    <% if (!isAuthenticated) { %>
                     <li>
                         <a href="/register">
                             <span class="material-symbols-outlined"> person_add </span>Εγγραφή</a>
                         <div class="menu-separator"></div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/login">
                             <span class="material-symbols-outlined"> login </span>Σύνδεση</a>
                         <div class="menu-separator"></div>
                     </li>
+                    <% } %>
                     <li>
-                        <a href="#">
+                        <a href="/">
                             <span class="material-symbols-outlined"> home </span>Αρχική σελίδα</a>
                             <div class="menu-separator"></div>
                     </li>
@@ -42,21 +50,24 @@
                             <span class="material-symbols-outlined"> dashboard </span>Ενότητες</a>
                         <div class="menu-separator"></div>
                     </li>
+                    <% if (isAuthenticated) { %>
                     <li>
                         <a href="/quizzes">
                             <span class="material-symbols-outlined"> quiz </span>Κουίζ</a>
                         <div class="menu-separator"></div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/register-success">
                             <span class="material-symbols-outlined"> account_circle </span>Προφίλ</a>
                         <div class="menu-separator"></div>
                     </li>
+                    
                     <li>
-                        <a href="#">
+                        <a href="/logout">
                             <span class="material-symbols-outlined"> logout </span>Αποσύνδεση</a>
                         <div class="menu-separator"></div>
                     </li>
+                    <% } %>
                 </ul>
             </aside>
         </div>

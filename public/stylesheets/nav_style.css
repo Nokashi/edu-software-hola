@@ -8,52 +8,50 @@ html {
 
 body {
     /* Spanish flag background */
-    background: linear-gradient(to bottom, 
-                                #c60b1e 33.33%,  /* Red top */
-                                #ffc400 33.33% 66.66%,  /* Yellow middle */
-                                #c60b1e 66.66%); /* Red bottom */
+    background-color: #ffc400;
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
-  .container{
-    display: flex;
-  }
-
-  header {
-    text-align: center;
-    background-color: #AD1519;
-    color: white;
-    padding: 10px 0;
+.container{
+  display: flex;
 }
 
-  .sidebar{
-    color: antiquewhite;
-    font-family: "Poppins", sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* Change the sidebar's length */
-    height: 100%;
-    width: 160px;
-    display:flex;
-    flex-direction: column;
-    padding: 20px 15px;
-    background-color: #0a0a0a;  
-    border: 5px double #0a0a0a;
-    overflow-x: hidden;
-    transition: all 0.4s ease;
-  }
+header {
+  text-align: center;
+  background-color: #AD1519;
+  color: white;
+  padding: 10px 0;
+}
 
-  .sidebar-links {
-    list-style: none;
-    margin-top: 20px;
-    height: 80%;
-    overflow-y: auto;
-    scrollbar-width: none;
-  }
+.sidebar{
+  color: antiquewhite;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Change the sidebar's length */
+  height: 100%;
+  width: 20vw;
+  max-width: 180px;
+  display:flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  background-color: #0a0a0a;  
+  border: 5px double #0a0a0a;
+  overflow-x: hidden;
+  transition: all 0.4s ease;
+}
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 20px;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
 
   .sidebar-links h4{
     color: antiquewhite;
