@@ -1,0 +1,27 @@
+.quiz-results-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.quiz-results-container h2 {
+    color: #c60b1e;
+    margin-bottom: 10px;
+}
+.quiz-results-container p {
+    font-size: 18px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AD1519;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #971317;
+}

@@ -1,11 +1,22 @@
+<!-- quiz_results.ejs -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="../stylesheets/results.css"> <!-- Adjust the path to your CSS file -->
 </head>
 <body>
-    <h1>YOU SCORED <%=percentageScore%> / 100</h1>
+    <div class="quiz-results-container">
+        <h2>Quiz Results</h2>
+        <p>Your Score: <%= score %> / <%= totalQuestions %></p>
+        <p>Percentage Score: <%= percentageScore.toFixed(2) %>%</p>
+
+        <a href="/" class="btn">Back to Homepage</a>
+        <a href="/courses" class="btn">Back to Courses</a>
+        <a href="/quizzes" class="btn">Back to Quizzes</a>
+    </div>
 </body>
 </html>

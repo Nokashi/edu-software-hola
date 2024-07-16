@@ -1,41 +1,47 @@
+/* Additional CSS specific to this page if needed */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    background-color: #ffc400; /* Light orange background */
+    color: #333333; /* Dark gray text */
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 15px;
 }
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
+    
+.profile-container {
+            
+    margin: 20px;          
+    padding: 20px;         
+    background-color: #ffffff; 
+    border: 1px solid #cccccc;         
+    border-radius: 5px;          
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-}
-
-.user-info {
-    flex-grow: 1;
-}
-
-.user-info p {
+        
+.profile-container h2 {
+            
+    color: #c60b1e; 
     margin-bottom: 10px;
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
+        
+.profile-container p {
+    font-size: 18px;
+}
+        
+.profile-container .performance-history {
+            
+    margin-top: 20px;
 }
 
-ul li {
-    margin-bottom: 15px;
+.profile-container .performance-history table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.profile-container .performance-history th,
+.profile-container .performance-history td {
+
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
 }
