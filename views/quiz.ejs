@@ -9,19 +9,19 @@
 <body>
     <div class="container">
         <h1>Quiz</h1>
-        <form method="POST">
-            <% questions.forEach((question, index) => { %>
+        <form method="post" id="quiz-form">
+            <% questions.forEach(question => { %>
                 <div class="question">
                     <p><%= question.text %></p>
-                    <% question.options.forEach((option, optionIndex) => { %>
-                        <div>
-                            <input type="radio" name="question_<%= index %>" id="question_<%= index %>_option_<%= optionIndex %>" value="<%= option %>">
-                            <label for="question_<%= index %>_option_<%= optionIndex %>"><%= option %></label>
-                        </div>
-                    <% }) %>
+                    <% question.options.forEach(option => { %>
+                        <label>
+                            <input type="radio" name="answers[<%= question._id %>]" value="<%= option %>">
+                            <%= option %>
+                        </label>
+                    <% }); %>
                 </div>
-            <% }) %>
-            <input type="hidden" name="userId" value="<%= user._id %>">>
+            <% }); %>
+            <input type="hidden" name="userId" value="<%= user._id %>">
             <button type="submit">Submit Quiz</button>
         </form>
     </div>

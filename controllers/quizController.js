@@ -45,7 +45,29 @@ exports.quizAll = asyncHandler(async (req, res, next) => {
 })
 
 exports.submit_quiz = asyncHandler(async (req, res, next) => {
-    console.log(req.body)
+    
+    const answers = req.body
+
+    // Initialize an empty object to store extracted answers
+    const userAnswers = {};
+    let userID;
+    // Iterate over the keys in answers object
+    for (const key in answers) {
+        // Check if the key is not 'userId'
+        if (key == 'userId')
+        {
+            userID = answers[key]
+        }
+        if (key !== 'userId') {
+            // Extract the questionId from the key
+            const questionId = key.match(/\[(.*?)\]/)[1];
+            // Assign the answer to the corresponding questionId in userAnswers
+            userAnswers[questionId] = answers[key];
+        }
+    }
+    
+    console.log(userAnswers);
+    console.log(userID)
     res.render('quiz_results')
 })
 
