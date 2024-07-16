@@ -1,4 +1,5 @@
 const Question = require('../models/question');
+const User = require('../models/user')
 const asyncHandler = require('express-async-handler');
 
 const quizzes = [
@@ -73,6 +74,31 @@ exports.submit_quiz = asyncHandler(async (req, res, next) => {
     const questions = await Question.find({ _id: { $in: questionIds } });
 
     console.log(questions)
+
+    let score = 0;
+    let totalQuestions = questions.length;
+
+    // Compare the submitted answers with the correct answers
+    questions.forEach(question => {
+        if (answers[question._id] === question.correctAnswer) {
+            score++;
+        }
+    });
+
+    // Calculate the percentage score
+    const percentageScore = (score / totalQuestions) * 100;
+
+    // Update the user's performance history and average grade
+    const user = await User.findById(userID);
+    user.performance_history.push({
+        quiz_chapter: questions[0].chapter, // Assuming all questions are from the same chapter
+        grade: percentageScore,
+        quiz_date: new Date()
+    });
+
+    user.average_grade = user.performance_history.reduce((sum, record) => sum + record.grade, 0) / user.performance_history.length;
+
+    await user.save();
 
     res.render('quiz_results')
 })
