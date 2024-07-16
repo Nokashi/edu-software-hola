@@ -68,6 +68,12 @@ exports.submit_quiz = asyncHandler(async (req, res, next) => {
     
     console.log(userAnswers);
     console.log(userID)
+
+    const questionIds = Object.keys(userAnswers);
+    const questions = await Question.find({ _id: { $in: questionIds } });
+
+    console.log(questions)
+
     res.render('quiz_results')
 })
 
