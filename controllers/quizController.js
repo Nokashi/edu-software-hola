@@ -80,7 +80,7 @@ exports.submit_quiz = asyncHandler(async (req, res, next) => {
 
     // Compare the submitted answers with the correct answers
     questions.forEach(question => {
-        if (answers[question._id] === question.correctAnswer) {
+        if (userAnswers[question._id] === question.correctAnswer) {
             score++;
         }
     });
@@ -97,10 +97,10 @@ exports.submit_quiz = asyncHandler(async (req, res, next) => {
     });
 
     user.average_grade = user.performance_history.reduce((sum, record) => sum + record.grade, 0) / user.performance_history.length;
-
+    avg_grade = user.average_grade;
     await user.save();
 
-    res.render('quiz_results')
+    res.render('quiz_results', {percentageScore, score, totalQuestions})
 })
 
 
