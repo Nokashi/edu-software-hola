@@ -9,7 +9,7 @@ const courses = [
 
 
 exports.course_list = asyncHandler(async (req, res, next) => {
-    res.render('courses', {courses});
+    res.render('courseList', {courses});
 })
 
 exports.course1 = asyncHandler(async (req, res, next) => {

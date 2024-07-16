@@ -86,3 +86,8 @@ exports.logout_page = asyncHandler(async (req, res, next) => {
 exports.register_success = asyncHandler(async (req, res, next) => {
     res.render('register-success')
 })
+
+
+exports.test = asyncHandler(async (req, res, next) => {
+    console.log(req.body)
+})

@@ -5,7 +5,7 @@
         <title>Navigation Bar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="registration page">
-        <link rel="stylesheet" href="stylesheets/nav_style.css">
+        <link rel="stylesheet" href="stylesheets/courseListStyle.css">
         <!-- Linking Google Font Link For Icons -->
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -79,7 +79,16 @@
             </aside>
         </div>
         <main class="main-content">
-            
+            <div class="course-container">
+                <% courses.forEach(course => { %>
+                    <div class="course">
+                        <h2><%= course.title %></h2>
+                        <p><%= course.description %></p>
+                        <p>Level: <%= course.level %></p>
+                        <a class="button" href="<%= `courses/${course.id}`%>">Go to Course</a>
+                    </div>
+                <% }) %>
+            </div>
         </main>
         <footer>
             <p>Απαλλακτική Εργασία "Εκπαιδευτικό Λογισμικό" - 2024<br><br>

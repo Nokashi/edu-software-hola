@@ -12,10 +12,15 @@
   <body>
     <header>
         <h1>Εγγραφή Νέου χρήστη</h1>
+        <% if (error && error.length > 0) { %>
+            <div class="alert alert-danger">
+                <%= error %>
+            </div>
+        <% } %>
     </header>
     <main>
         <!--form initiation-->
-        <form id="registration" action="">
+        <form id="registration" action="/register" method="POST">
             <!--a container for the left side-->
             <div class="form-container">
                 <!--Basic Information-->
@@ -79,9 +84,9 @@
                 <div class="question">
                     <label id="q2" for="q2"><strong>Ερώτηση 2:</strong> Που βρίσκεται η "Sagrada Familia";<br></label>
                     <label for="answer1"><input type="radio" id="q2a1" name="a2" value="granada" required>Γρανάδα</label>
-                    <label for="answer2"><input type="radio" id="q2a2" name="a1" value="madrid" required>Μαδρίτη</label>
-                    <label for="answer3"><input type="radio" id="q2a3" name="a1" value="mallorca" required>Μαγιόρκα</label>
-                    <label for="answer4"><input type="radio" id="q2a4" name="a1" value="barcelone" required>Βαρκελώνη</label>
+                    <label for="answer2"><input type="radio" id="q2a2" name="a2" value="madrid" required>Μαδρίτη</label>
+                    <label for="answer3"><input type="radio" id="q2a3" name="a2" value="mallorca" required>Μαγιόρκα</label>
+                    <label for="answer4"><input type="radio" id="q2a4" name="a2" value="barcelone" required>Βαρκελώνη</label>
                 </div>
                 <div class="question">
                     <label id="q3" for="q3"><strong>Ερώτηση 4:</strong>Εύκολη γραμματικής</label>

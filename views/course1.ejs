@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../stylesheets/courses.css">
 </head>
 <body>
-    <% if (isAuthenticated) { %>
-        <h1>ΓΕΙΑ ΣΟΥ <%= user.username %></h1>
-    <% } else { %>
-        <h1>Κανε λογαριασμο για να ξεκινησεις την εκπαιδευση!</h1>
-    <% } %>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="button" href="/courses">Επιστροφή στον Κατάλογο</a>
+        </div>
+    </nav>
     <h1>Course 1: Introduction to Programming</h1>
     <p>Description of Course 1</p>
     <p>Level: Beginner</p>

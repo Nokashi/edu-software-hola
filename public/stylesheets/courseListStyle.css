@@ -1,0 +1,151 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 15px;
+    height: 100%;
+  }
+
+body {
+    /* Spanish flag background */
+    background-color: #ffc400;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+.container{
+  display: flex;
+}
+
+header {
+  text-align: center;
+  background-color: #AD1519;
+  color: white;
+  padding: 10px 0;
+}
+
+.sidebar{
+  color: antiquewhite;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Change the sidebar's length */
+  height: 100%;
+  width: 20vw;
+  max-width: 180px;
+  display:flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  background-color: #0a0a0a;  
+  border: 5px double #0a0a0a;
+  overflow-x: hidden;
+  transition: all 0.4s ease;
+}
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 20px;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+  .sidebar-links h4{
+    color: antiquewhite;
+    text-decoration: underline;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 10px 0;
+    position: relative;
+  }
+
+  .sidebar-links li a {
+    color:#fefefec0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    padding: 5px;
+    font-weight: 300;
+    /* white-space: nowrap; */
+    transition: 0.2s ease;
+  }
+
+  .sidebar-links li a:hover {
+    color: #161a2d;
+    background: #fff;
+    border-radius: 4px;
+  }
+
+  .sidebar .sidebar-header h2{
+    font-size: 1.55rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 23px;
+  }
+  
+
+  .main-content{
+    margin-left: 200px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.695); /* Semi-transparent background for readability */
+  }
+
+  footer{
+    color: white;
+    text-align: center;
+    background-color: #AD1519;
+    padding: 10px 0;
+  }
+
+
+  .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course {
+    background-color: #ffc400;
+    border: 2px solid #c60b1e;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #c60b1e;
+}
+
+.course h3 {
+    margin-top: 0;
+}
+
+.course p {
+    margin: 5px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #c60b1e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.button:hover {
+    background-color: #a00b16;
+}

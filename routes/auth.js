@@ -8,6 +8,9 @@ router.get('/register', authController.register_page_bill);
 
 router.post('/register', authController.registration_auth);
 
+// register page debug
+// router.post('/register', authController.test)
+
 router.get('/register-success', authController.register_success)
 
 // login
