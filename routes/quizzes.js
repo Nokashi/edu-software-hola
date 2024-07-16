@@ -18,4 +18,6 @@ router.get('/quiz4', quizController.quiz4);
 
 router.get('/quizAll', quizController.quizAll);
 
+router.post('/quiz1', quizController.submit_quiz)
+
 module.exports = router;

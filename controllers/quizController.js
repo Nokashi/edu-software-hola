@@ -44,5 +44,9 @@ exports.quizAll = asyncHandler(async (req, res, next) => {
     res.render('quiz', {questions});
 })
 
+exports.submit_quiz = asyncHandler(async (req, res, next) => {
+    console.log(req.body)
+    res.render('quiz_results')
+})
 
 

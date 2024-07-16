@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Quiz</h1>
-        <form action="/submit-quiz" method="POST">
+        <form method="POST">
             <% questions.forEach((question, index) => { %>
                 <div class="question">
                     <p><%= question.text %></p>
@@ -21,6 +21,7 @@
                     <% }) %>
                 </div>
             <% }) %>
+            <input type="hidden" name="userId" value="<%= user._id %>">>
             <button type="submit">Submit Quiz</button>
         </form>
     </div>
