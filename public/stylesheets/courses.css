@@ -1,9 +1,14 @@
+/* TODO: Delete unused Styles */
+
 body {
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
     font-size: 15px;
     margin: 0;
     background-color: #ffc400;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 h1, h2 {
@@ -11,18 +16,6 @@ h1, h2 {
     color: black;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #fff;
-}
 
 h2 {
     margin: 0 0 10px;
@@ -33,50 +26,23 @@ p {
     line-height: 1.6;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
-}
-
-.course-content {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #fff;
-}
-
-.course-content h2 {
-    margin-top: 20px;
-}
 
 .navbar {
     width: 100%;
     background-color: #0a0a0a;
     color: antiquewhite;
     padding: 5px 0;
+    box-sizing: border-box;
 }
 
 .navbar-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-}
 
-.nav-logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
 }
 
 .nav-links {
@@ -122,7 +88,62 @@ a:hover {
     width: 150px;
 }
 
+.buttonSeeMore {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+    border-style: none;
+    margin: 20px;
+}
+
+.buttonSeeMore:hover {
+    background-color: #a00b16;
+    text-decoration: none;
+}
+
 .button:hover {
     background-color: #a00b16;
     text-decoration: none;
+}
+
+footer {
+    background-color: #c60b1e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    padding: 20px;
+    background-color: #a00b16;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chapter {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffc400;
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }

@@ -9,7 +9,13 @@ const courses = [
 
 
 exports.course_list = asyncHandler(async (req, res, next) => {
-    res.render('courseList', {courses});
+    if(req.isAuthenticated())
+    {
+        res.render('courseList', {courses});
+    } 
+    else {
+        res.render('courses-preview')
+    }
 })
 
 exports.course1 = asyncHandler(async (req, res, next) => {
