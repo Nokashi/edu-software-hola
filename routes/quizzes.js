@@ -20,4 +20,12 @@ router.get('/5', quizController.quizAll);
 
 router.post('/1', quizController.submit_quiz)
 
+router.post('/2', quizController.submit_quiz)
+
+router.post('/3', quizController.submit_quiz)
+
+router.post('/4', quizController.submit_quiz)
+
+router.post('/5', quizController.submit_quiz)
+
 module.exports = router;
