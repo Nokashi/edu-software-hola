@@ -7,7 +7,7 @@ async function fetchChapterQuizzesDone(userId, chapterNum) {
             { $match: { _id: userId } }, // Match the user by their _id
             { $unwind: '$performance_history' }, // Unwind the performance_history array
             { 
-                $match: { 'performance_history.quiz_chapter': chapterNum } // Match only for quiz_chapter 1
+                $match: { 'performance_history.quiz_chapter': chapterNum } // Match only for quiz_chapter == ChapterNum
             },
             { $count: 'chapter1QuizzesDone' } // Count the matched documents
         ]);
@@ -19,7 +19,7 @@ async function fetchChapterQuizzesDone(userId, chapterNum) {
         }
     } catch (error) {
         console.error('Error fetching chapter 1 quizzes:', error);
-        throw error; // Handle the error appropriately in your application
+        throw error;
     }
 }
 
