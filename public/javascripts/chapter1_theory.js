@@ -1,25 +1,44 @@
 const chapter1_theory = [
-    "Spain's history dates back to ancient times, with evidence of human habitation as early as the Paleolithic era. The Iberian Peninsula was home to various tribes and cultures, including the Iberians, Celts, and Basques. The Phoenicians and Greeks established trading colonies along the coast, while the Carthaginians controlled much of the peninsula before the arrival of the Romans.",
+    `Η Ισπανία (ισπανικά: España), επίσημα το Βασίλειο της Ισπανίας (ισπανικά: Reino de España),
+    είναι κράτος της νότιας Ευρώπης που καταλαμβάνει το μεγαλύτερο μέρος της Ιβηρικής χερσονήσου. 
+    Συνορεύει με την Γαλλία, την Ανδόρρα, το Γιβραλτάρ και την Πορτογαλία, 
+    ανατολικά και νότια βρέχεται από τη Μεσόγειο Θάλασσα και νοτιοδυτικά βρέχεται από τον Ατλαντικό ωκεανό. `,
+
+    `Έχει έκταση 504.645 τ.χλμ. και συνολικό πληθυσμό 48.592.909 κατοίκους,
+    σύμφωνα με επίσημη εκτίμηση για τον Ιανουάριο του 2024.
+    Πρωτεύουσα και μεγαλύτερη πόλη της Ισπανίας, είναι η Μαδρίτη.`,
+
+    `Η Ισπανία μοιράζεται μεγάλο μέρος της ιστορίας της με την Πορτογαλία, την Ανδόρρα και τη νότια Γαλλία. 
+    Κατά την αρχαιότητα στην περιοχή έζησαν διάφοροι λαοί, όπως οι Ίβηρες και οι Κέλτες, 
+    οι οποίοι αφομοιώθηκαν από τους Ρωμαίους μετά τη ρωμαϊκή κατάκτηση. 
+    Ωστόσο, η μουσουλμανική κατάκτηση της Ιβηρικής άλλαξε ριζικά τον χαρακτήρα των Ισπανογότθων, 
+    εντάσσοντας την Ιβηρική χερσόνησο στον μουσουλμανικό κόσμο.`,
+
+    `Η Ισπανία γενικά αποτελεί ένα τεράστιο σε έκταση οροπέδιο που διαμοιράζεται από αλλεπάλληλες οροσειρές
+    σε επιμέρους μικρότερα οροπέδια. Η μεγαλύτερη οροσειρά της Ισπανίας είναι η Σιέρα Νεβάδα (Sierra Nevada),
+    που βρίσκεται στην περιοχή της Ανδαλουσίας, στη νότια Ισπανία. Η υψηλότερη κορυφή της,
+    και ταυτόχρονα η υψηλότερη κορυφή της Ιβηρικής Χερσονήσου, είναι η Μουλάσεν (Mulhacén),
+    η οποία φτάνει σε ύψος τα 3.479 μέτρα.`,
+
+    `Οι Ισπανοί είναι κατά το μεγαλύτερο μέρος τους χριστιανοί Ρωμαιοκαθολικοί,
+    αν και η δύναμη της Εκκλησίας έχει μειωθεί αρκετά τα τελευταία χρόνια.
+    Σήμερα το Ισπανικό Σύνταγμα (άρθρο 16) παρέχει και προστατεύει πλήρως την ανεξιθρησκία, που είχε ξεκινήσει από το 1868.
+    Έτσι από τις 29 Δεκεμβρίου 1978 δεν υφίσταται ο όρος «επίσημη θρησκεία» στην Ισπανία.`,
+
+    `Η Ισπανία διαθέτει πληθώρα μνημείων και ιστορικών τοποθεσιών που αντανακλούν την πλούσια ιστορία και τον πολιτισμό της.
+    Ας δούμε κάποια βασικά μνημεία μαζί.`,
+
+    `1. Η Αλάμπρα <b>(La Alhambra)</b> <br><br>
     
-    "The Romans began their conquest of the Iberian Peninsula in 218 BC during the Second Punic War. They established the provinces of Hispania Tarraconensis, Hispania Baetica, and Lusitania. Roman rule brought significant cultural, economic, and infrastructural development to Spain, including roads, aqueducts, and cities. Christianity also spread during this period, becoming the dominant religion by the 4th century AD.",
-    
-    "Following the decline of the Roman Empire, the Visigoths, a Germanic tribe, invaded Spain and established a kingdom in the 5th century AD. The Visigothic Kingdom lasted until the early 8th century, marked by the unification of various territories and the codification of laws. The Visigothic period saw the continuation of Roman traditions and the spread of Christianity.",
-    
-    "In 711 AD, the Moors, a Muslim group from North Africa, invaded the Iberian Peninsula and established the Umayyad Caliphate. Islamic Spain, known as Al-Andalus, flourished as a center of learning, culture, and trade. Major cities like Córdoba, Seville, and Granada became renowned for their advancements in science, medicine, architecture, and the arts. The coexistence of Muslims, Christians, and Jews during this period led to significant cultural exchange.",
-    
-    "The Reconquista was a series of campaigns by Christian kingdoms to reclaim territory from the Moors. It began in the 8th century and culminated in 1492 with the fall of Granada, the last Muslim stronghold, to the Catholic Monarchs Ferdinand and Isabella. The Reconquista had a profound impact on Spanish society, politics, and culture, leading to the consolidation of Christian rule and the expulsion or conversion of Muslims and Jews.",
-    
-    "Following the Reconquista, Spain entered its Golden Age, marked by the establishment of a vast colonial empire. The discovery of the Americas in 1492 by Christopher Columbus, sponsored by the Spanish crown, led to extensive exploration, conquest, and colonization. Spain became one of the world's leading powers, controlling territories in Europe, the Americas, Asia, and Africa. The wealth from its colonies fueled Spain's cultural and artistic achievements during this period.",
-    
-    "The Habsburg dynasty ruled Spain from the early 16th century to the early 18th century. Under Habsburg rule, Spain experienced both triumphs and challenges. The reign of Charles I (also Holy Roman Emperor Charles V) and Philip II saw Spain at the height of its power, but also faced military conflicts, economic difficulties, and religious tensions. The decline of the Habsburgs led to the War of Spanish Succession and the rise of the Bourbon dynasty.",
-    
-    "The Bourbon dynasty, which began with Philip V in the early 18th century, implemented a series of reforms to modernize Spain and strengthen royal authority. The Bourbon Reforms aimed to centralize administration, promote economic development, and improve military efficiency. Despite these efforts, Spain faced internal and external challenges, including the Napoleonic Wars and the loss of its American colonies in the early 19th century.",
-    
-    "The 19th century was a period of significant political and social upheaval in Spain. The Peninsular War against Napoleonic France, the struggle for independence in Spanish America, and internal conflicts such as the Carlist Wars shaped the nation's history. The century also saw attempts at liberal reforms, the establishment of a constitutional monarchy, and the rise of industrialization.",
-    
-    "The 20th century brought further changes and challenges to Spain. The Spanish Civil War (1936-1939) resulted in the establishment of Francisco Franco's dictatorship, which lasted until his death in 1975. The post-war period was marked by repression and economic hardship, but also gradual modernization. Following Franco's death, Spain transitioned to democracy, culminating in the adoption of a new constitution in 1978 and the establishment of a parliamentary monarchy.",
-    
-    "Since the late 20th century, Spain has undergone significant political, economic, and social transformation. It became a member of the European Union in 1986, leading to increased integration with Europe. Spain has experienced economic growth, modernization, and cultural renaissance, while also facing challenges such as regional independence movements, economic crises, and immigration. Today, Spain is a vibrant and diverse country with a rich cultural heritage."
+    Η Αλάμπρα είναι ένα επιβλητικό συγκρότημα παλατιών και φρουρίων στη Γρανάδα.
+    Χτίστηκε κατά την εποχή των Μαυριτανών και αποτελεί ένα από τα καλύτερα παραδείγματα της ισλαμικής αρχιτεκτονικής στην Ισπανία.
+    Το συγκρότημα περιλαμβάνει το Παλάτι των Νασρίντ, τον Παράδεισο του Λίντερ, και τον Γενεραλίφε, έναν όμορφο κήπο.`,
+
+    `2. Η Σαγράδα Φαμίλια <b>(La Sagrada Família)</b> <br><br>
+    Η Σαγράδα Φαμίλια είναι μια μεγάλη, ημιτελής ρωμαιοκαθολική βασιλική στη Βαρκελώνη, σχεδιασμένη από τον διάσημο αρχιτέκτονα Αντόνι Γκαουντί.
+    Η κατασκευή της ξεκίνησε το 1882 και αναμένεται να ολοκληρωθεί γύρω στο 2026.
+    Είναι γνωστή για τον μοναδικό της σχεδιασμό και τις εντυπωσιακές της λεπτομέρειες.`,
+
 ];
 
 let currentChapter = 0;
@@ -41,7 +60,7 @@ function showNextChapter() {
         const contentDiv = document.getElementById('content');
         const newDiv = document.createElement('div');
         newDiv.classList.add('chapter');
-        newDiv.textContent = chapter1_theory[currentChapter];
+        newDiv.innerHTML = chapter1_theory[currentChapter];
         contentDiv.appendChild(newDiv);
         newDiv.scrollIntoView({ behavior: 'smooth' });
         currentChapter++;
