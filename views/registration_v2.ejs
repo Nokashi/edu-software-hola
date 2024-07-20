@@ -57,7 +57,7 @@
                     <legend>Στοιχεία Λογαριασμού</legend>
                     <div class="username">
                         <label id="username" for="username">Όνομα χρήστη</label>
-                        <input id="username" type="text" placeholder="Το όνομα χρήστη σας" required>
+                        <input id="username" type="text" name="username" placeholder="Το όνομα χρήστη σας" required>
                     </div>
                     <div class="password">
                         <label id="password" for="password">Κωδικός Πρόσβασης</label>
@@ -86,19 +86,34 @@
                     <label for="answer1"><input type="radio" id="q2a1" name="a2" value="granada" required>Γρανάδα</label>
                     <label for="answer2"><input type="radio" id="q2a2" name="a2" value="madrid" required>Μαδρίτη</label>
                     <label for="answer3"><input type="radio" id="q2a3" name="a2" value="mallorca" required>Μαγιόρκα</label>
-                    <label for="answer4"><input type="radio" id="q2a4" name="a2" value="barcelone" required>Βαρκελώνη</label>
+                    <!-- σωστή -->
+                    <label for="answer4"><input type="radio" id="q2a4" name="a2" value="barcelona" required>Βαρκελώνη</label>
                 </div>
                 <div class="question">
-                    <label id="q3" for="q3"><strong>Ερώτηση 4:</strong>Εύκολη γραμματικής</label>
+                    <label id="q3" for="q3"><strong>Ερώτηση 3:</strong> ¿Dónde ____ en Atenas?</label>
+                    <label for="answer1"><input type="radio" id="q3a1" name="a3" value="eres" required>eres</label>
+                    <!-- σωστή -->
+                    <label for="answer2"><input type="radio" id="q3a2" name="a3" value="estas" required>estás</label>
                 </div>
                 <div class="question">
-                    <label id="q4" for="q4"><strong>Ερώτηση 4:</strong>Δύσκολη γραμματικής</label>
+                    <label id="q4" for="q4"><strong>Ερώτηση 4:</strong>¿____ es tu nombre?</label>
+                    <label for="answer1"><input type="radio" id="q4a1" name="a4" value="que" required>Qué</label>
+                    <!-- σωστή -->
+                    <label for="answer2"><input type="radio" id="q4a2" name="a4" value="cual" required>Cuál</label>
+                </div>  
+                <div class="question">
+                    <label id="q5" for="q5"><strong>Ερώτηση 5:</strong>Η φράση "¡Hola! Me llamo Vasilis, soy Informatico y vivo en Atenas." είναι:</label>
+                    <!-- σωστή -->
+                    <label for="answer1"><input type="radio" id="q5a1" name="a5" value="greeting" required>Χαιρετισμός</label>
+                    <label for="answer2"><input type="radio" id="q5a2" name="a5" value="goodbye" required>Αποχαιρετισμός</label>
                 </div>
                 <div class="question">
-                    <label id="q5" for="q5"><strong>Ερώτηση 5:</strong>Εύκολη επικοινωνίας</label>
-                </div>
-                <div class="question">
-                    <label id="q6" for="q6"><strong>Ερώτηση 6:</strong>Δύσκολη επικοινωνίας</label>
+                    <label id="q6" for="q6"><strong>Ερώτηση 6:</strong>Ποιά από τις παρακάτω φράσεις είναι <b>επίσημη;</b></label>
+                    <label for="answer1"><input type="radio" id="q6a1" name="a6" value="como estas" required>¿Cómo estás?</label>
+                    <label for="answer2"><input type="radio" id="q6a2" name="a6" value="que tal" required>¿Qué tal?</label>
+                    <!-- σωστή -->
+                    <label for="answer3"><input type="radio" id="q6a3" name="a6" value="como esta usted" required>¿Cómo está usted?</label>
+                    <label for="answer4"><input type="radio" id="q6a4" name="a6" value="que pasa" required>¿Qué pasa?</label>
                 </div>
             </fieldset>
             <div class="button-container">

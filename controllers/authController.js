@@ -1,6 +1,6 @@
 const asyncHandler = require('express-async-handler');
 const User = require('../models/user');
-const passport = require('passport')
+const passport = require('passport');
 
 exports.login_auth = (req, res, next) => {
     passport.authenticate('local', (err, user, info) => {
@@ -46,7 +46,7 @@ exports.register_page_bill =  asyncHandler(async (req, res, next) => {
 })
 
 exports.registration_auth = asyncHandler(async (req, res, next) => {
-    const { first_name, surname, username, email, year_of_birth, password, confirmPassword } = req.body;
+    const { first_name, surname, email, year_of_birth, username, password, confirmPassword, a1, a2, a3, a4, a5, a6 } = req.body;
 
     const existingUsername = await User.findOne({username});
     if (existingUsername) {
@@ -73,6 +73,29 @@ exports.registration_auth = asyncHandler(async (req, res, next) => {
     // Register the user with passport-local-mongoose
     await User.register(newUser, password);
     console.log(`User ${email} registered successfully!`);
+
+    console.log("adding quiz results")
+    let score = 0
+
+    const userToRegister = await User.findOne({username})
+
+    if(a1 == "madrid") score++;
+    if(a2 == "barcelona") score++;
+    if(a3 == "estas") score++;
+    if(a4 == "cual") score++;
+    if(a5 == "greeting") score++;
+    if(a6 == "como esta usted") score++;
+
+    const percentageScore = (score / 6) * 100;
+
+    userToRegister.performance_history.push({
+        quiz_chapter: 0, // Assuming all questions are from the same chapter
+        grade: percentageScore,
+        quiz_date: new Date()
+    });
+
+    userToRegister.average_grade = userToRegister.performance_history.reduce((sum, record) => sum + record.grade, 0) / userToRegister.performance_history.length;
+    await userToRegister.save();
     res.render('register-success');
 });
 
@@ -89,5 +112,20 @@ exports.register_success = asyncHandler(async (req, res, next) => {
 
 
 exports.test = asyncHandler(async (req, res, next) => {
-    console.log(req.body)
+    const { first_name, surname, email, year_of_birth, username, password, confirmPassword, a1, a2, a3, a4, a5, a6 } = req.body;
+
+    /* console.log(first_name)
+    console.log(surname)
+    console.log(email)
+    console.log(year_of_birth)
+    console.log(username)
+    console.log(password)
+    console.log(confirmPassword)
+    console.log(a1)
+    console.log(a2)
+    console.log(a3)
+    console.log(a4)
+    console.log(a5)
+    console.log(a6) */
+
 })
