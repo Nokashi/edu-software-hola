@@ -1,5 +1,6 @@
 const Question = require('../models/question');
 const User = require('../models/user')
+const Scenario = require('../models/scenario')
 const asyncHandler = require('express-async-handler');
 
 const quizzes = [
