@@ -170,26 +170,174 @@ db.once('open', async () => {
             correctAnswer: 'Αγία Λουκία'
         },
         {
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποια περιοχή της Ισπανίας είναι γνωστή για το φλαμένκο;',
+            options: ['Καταλονία', 'Ανδαλουσία', 'Μαρδίτη', 'Γαλικία'],
+            correctAnswer: 'Ανδαλουσία'
+        },
+        {
             chapter: 2,
             difficulty_level: 'Easy',
-            text: 'What is the most abundant gas in the Earth\'s atmosphere?',
-            options: ['Oxygen', 'Carbon Dioxide', 'Nitrogen', 'Hydrogen'],
-            correctAnswer: 'Nitrogen'
+            text: 'Τι περιλαμβάνει το φεστιβάλ La Tomatina;',
+            options: ['Τρέξιμο με ταύρους', 'Μάχη με ντομάτες', 'Πυροτεχνήματα', 'Θρησκευτικές πομπές'],
+            correctAnswer: 'Μάχη με ντομάτες'
         },
         {
-            chapter: 3,
-            difficulty_level: 'Medium',
-            text: 'Which planet is closest to the sun?',
-            options: ['Earth', 'Venus', 'Mercury', 'Mars'],
-            correctAnswer: 'Mercury'
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Ποιο από τα παρακάτω είναι ένα παραδοσιακό πιάτο με ρύζι και θαλασσινά;',
+            options: ['Tapas', 'Tortilla de Patatas', 'Paella', 'Gazpacho'],
+            correctAnswer: 'Paella'
         },
         {
-            chapter: 4,
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Ποιο φεστιβάλ περιλαμβάνει την καύση πολύχρωμων γλυπτών στη Βαλένθια;',
+            options: ['Semana Santa', 'Fallas de Valencia', 'San Fermín', 'La Tomatina'],
+            correctAnswer: 'Fallas de Valencia'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Τι είναι τα churros;',
+            options: ['Γλυκό', 'Κρύα σούπα', 'Τάπας', 'Αλλαντικό'],
+            correctAnswer: 'Γλυκό'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Ποιο ποτό παρασκευάζεται από κόκκινο κρασί και φρούτα;',
+            options: ['Horchata', 'Sangría', 'Gazpacho', 'Cava'],
+            correctAnswer: 'Sangría'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι το κύριο συστατικό της τορτίγιας;',
+            options: ['Πατάτες', 'Κρέας', 'Ρύζι', 'Θαλασσινα'],
+            correctAnswer: 'Πατάτες'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Ποιο παραδοσιακό πιάτο αποτελείται από λεπτοκομμένες φέτες αλλαντικού;',
+            options: ['Paella', 'Jamón', 'Tortilla', 'Tapas'],
+            correctAnswer: 'Jamón'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Ποιο φεστιβάλ περιλαμβάνει το τρέξιμο των ταύρων στην Παμπλόνα;',
+            options: ['Semana Santa', 'Fallas de Valencia', 'San Fermín', 'La Tomatina'],
+            correctAnswer: 'San Fermín'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Ποιο φαγητό είναι γνωστό για την κατανάλωση του μαζί με ζεστή σοκολάτα;',
+            options: ['Gazpacho', 'Paella', 'Churros', 'Tortilla'],
+            correctAnswer: 'Churros'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Τι τύπος πιάτων ειναι τα τάπας (Tapas);',
+            options: ['Κυρίως πιάτο', 'Συνοδευτικό πιάτο', 'Επιδόρπιο', 'Πρωινό'],
+            correctAnswer: 'Συνοδευτκό πιάτο'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Easy',
+            text: 'Ποιο ποτό παρασκευάζεται από νερο, ζάχαρη και chufas;',
+            options: ['Sangría', 'Cava', 'Horchata', 'Vino Tinto'],
+            correctAnswer: 'Horchata'
+        },
+        {
+            chapter: 2,
             difficulty_level: 'Hard',
-            text: 'What is the capital of Japan?',
-            options: ['Seoul', 'Beijing', 'Tokyo', 'Bangkok'],
-            correctAnswer: 'Tokyo'
+            text: 'Ποια είναι τα τρία βασικά στοιχεία του φλαμένκο;',
+            options: ['Cante, Baile, Toque', 'Cante, Música, Danza', 'Baile, Música, Fandango', 'Toque, Flamenco, Ritmo'],
+            correctAnswer: 'Cante, Baile, Toque'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Σε ποιά πόλη της Ισπανίας λαμβάνει χώρα η La Tomatina;',
+            options: ['Βαλένθια', 'Σεβίλλη', 'Μαδρίτη', 'Μπουνιόλ'],
+            correctAnswer: 'Μπουνιόλ'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Απο ποιον αιώνα χρονολογείται το φεστιβάλ San Fermín;',
+            options: ['12ο αιώνα', '14ο αιώνα', '16ο αιώνα', '18ο αιώνα'],
+            correctAnswer: '14ο αιώνα'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Ποιο από τα συστατικά προσδίδει στη paella το χαρακτηριστικό της χρώμα;',
+            options: ['Κουρκουμάς', 'Κάρυ', 'Σαφράν', 'Πάπρικα'],
+            correctAnswer: 'Σαφράν'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Ποια περιοχή της Ισπανίας είναι γνωστή για το Jamón Ibérico;',
+            options: ['Ανδαλουσία', 'Καταλονία', 'Εστρεμαδούρα', 'Γαλικία'],
+            correctAnswer: 'Εστρεμαδούρα'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Ποιο είναι το αποκορύφωμα των εκδηλώσεων στο Fallas de Valencia;',
+            options: ['La Nit de le Cremà', 'El Día de los Muertos', 'La Fiesta de San Juan', 'La Nochebuena'],
+            correctAnswer: 'La Nit de le Cremà'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Τι συστατικό δεν περιέχεται στην παραδοσιακή συνταγή για gazpacho;',
+            options: ['Ντομάτες', 'Αγγούρια', 'Πατάτες', 'Πιπεριές'],
+            correctAnswer: 'Πατάτες'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Ποια πόλη της Ισπανίας είναι γνωστή για τις εντυπωσιακές πομπές της Semana Santa;',
+            options: ['Βαλένθια', 'Βαρκελώνη', 'Μαδρίτη', 'Σεβίλλη'],
+            correctAnswer: 'Σεβίλλη'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Ποιο από τα παρακάτω νησιά δεν ανακαλύφθηκε από τον Χριστόφορο Κολόμβο;',
+            options: ['Jamón Serrano και Jamón Ibérico', 'Jamón Serrano και Jamón Bellota', 'Jamón Ibérico και Jamón Bellota', 'Jamón Bellota και Jamón Curado'],
+            correctAnswer: 'Jamón Serrano και Jamón Ibérico'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Πως λέγεται το παραδοσιακό ψωμί που συνοδεύει την Horchata;',
+            options: ['Churro', 'Pan de Muerto', 'Fartons', 'Magdalenas'],
+            correctAnswer: 'Fartons'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Ποιο είναι το κύριο συστατικό της Horchata;',
+            options: ['Ρύζι', 'Αμύγδαλα', 'Chufas', 'Σιτάρι'],
+            correctAnswer: 'Chufas'
+        },
+        {
+            chapter: 2,
+            difficulty_level: 'Hard',
+            text: 'Ποιο από τα παρακάτω δεν είναι στοιχείο του φλαμένκο;',
+            options: ['Cante', 'Baile', 'Fandango', 'Toque'],
+            correctAnswer: 'Fandango'
         }
+
     ];
     
 
