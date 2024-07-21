@@ -25,6 +25,10 @@ h1 {
     border-radius: 5px;
 }
 
+.question label {
+    display: block;
+}
+
 button {
     display: block;
     width: 100%;
