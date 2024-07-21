@@ -14,6 +14,7 @@ db.once('open', async () => {
     console.log('Connected to MongoDB');
 
     const dummyQuestions = [
+        // chapter 1
         {
             chapter: 1,
             difficulty_level: 'Easy',
@@ -84,7 +85,6 @@ db.once('open', async () => {
             options: ['Μεσκίτα της Κόρδοβας', 'Πάρκο Γκουέλ', 'Μοναστήρι του Ελ Εσκοριάλ', 'Σαγράδα Φαμίλια'],
             correctAnswer: 'Πάρκο Γκουέλ'
         },
-        // New questions
         {
             chapter: 1,
             difficulty_level: 'Hard',
