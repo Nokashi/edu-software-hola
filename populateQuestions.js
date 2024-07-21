@@ -17,157 +17,157 @@ db.once('open', async () => {
         {
             chapter: 1,
             difficulty_level: 'Easy',
-            text: 'What is the capital of France?',
-            options: ['Paris', 'Berlin', 'London', 'Rome'],
-            correctAnswer: 'Paris'
-        },
-        {
-            chapter: 2,
-            difficulty_level: 'Medium',
-            text: 'What is the largest ocean on Earth?',
-            options: ['Atlantic', 'Arctic', 'Indian', 'Pacific'],
-            correctAnswer: 'Pacific'
-        },
-        {
-            chapter: 2,
-            difficulty_level: 'Hard',
-            text: 'Who discovered penicillin?',
-            options: ['Alexander Fleming', 'Marie Curie', 'Albert Einstein', 'Isaac Newton'],
-            correctAnswer: 'Alexander Fleming'
-        },
-        {
-            chapter: 3,
-            difficulty_level: 'Easy',
-            text: 'Which planet is known as the Red Planet?',
-            options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
-            correctAnswer: 'Mars'
-        },
-        {
-            chapter: 3,
-            difficulty_level: 'Medium',
-            text: 'Who wrote the play "Romeo and Juliet"?',
-            options: ['William Shakespeare', 'Charles Dickens', 'Jane Austen', 'Mark Twain'],
-            correctAnswer: 'William Shakespeare'
-        },
-        {
-            chapter: 4,
-            difficulty_level: 'Hard',
-            text: 'What is the largest organ in the human body?',
-            options: ['Liver', 'Heart', 'Lung', 'Skin'],
-            correctAnswer: 'Skin'
-        },
-        {
-            chapter: 2,
-            difficulty_level: 'Easy',
-            text: 'Who painted the Mona Lisa?',
-            options: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Michelangelo'],
-            correctAnswer: 'Leonardo da Vinci'
+            text: 'Ποια είναι η πρωτεύουσα της Ισπανίας;',
+            options: ['Βαρκελώνη', 'Σεβιλλη', 'Μαδρίτη', 'Βαλένθια'],
+            correctAnswer: 'Μαδρίτη'
         },
         {
             chapter: 1,
-            difficulty_level: 'Medium',
-            text: 'What year did the Titanic sink?',
-            options: ['1912', '1907', '1923', '1898'],
-            correctAnswer: '1912'
+            difficulty_level: 'Easy',
+            text: 'Με ποια χώρα δεν συνορεύει η Ισπανία;',
+            options: ['Πορτογαλία', 'Ιταλία', 'Γαλλία', 'Ανδόρρα'],
+            correctAnswer: 'Ιταλία'
         },
         {
-            chapter: 2,
-            difficulty_level: 'Hard',
-            text: 'What is the unit of electric current?',
-            options: ['Volt', 'Watt', 'Ampere', 'Ohm'],
-            correctAnswer: 'Ampere'
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποια είναι η μεγαλύτερη οροσειρά της Ισπανίας;',
+            options: ['Πυρηναία', 'Κανταβρικές Οροσειρές', 'Σιέρα Νεβάδα', 'Οροσειρά της Καστίλλης'],
+            correctAnswer: 'Σιέρα Νεβάδα'
         },
         {
-            chapter: 3,
-            difficulty_level: 'Medium',
-            text: 'Who invented the telephone?',
-            options: ['Alexander Graham Bell', 'Thomas Edison', 'Nikola Tesla', 'Guglielmo Marconi'],
-            correctAnswer: 'Alexander Graham Bell'
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποια είναι η υψηλότερη κορυφή της Ιβηρικής Χερσονήσου',
+            options: ['Ανέτο', 'Μουλάσεν', 'Τεϊντέ', 'Γιέρανι'],
+            correctAnswer: 'Μουλάσεν'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποιος είναι ο μεγαλύτερος γοτθικός κθεδρικός ναός στον κόσμο;',
+            options: ['Καθεδρικός της Σεβίλλης', 'Καθεδρικός της Βαρκελώνης', 'Καθεδρικός της Λεόν', 'Καθεδρικός της Σαλαμάνκα'],
+            correctAnswer: 'Καθεδρικός της Σεβίλλης'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποιό μνημείο σχεδιάστηκε από τον Αντόνι Γκαουντί και είναι ακόμα ημιτελές;',
+            options: ['Πάρκο Γκουέλ', 'Καθεδρικός της Σεβίλλης', 'Σαγράδα Φαμίλια ', 'Αλάμπρα'],
+            correctAnswer: 'Σαγράδα Φαμίλια'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποιο από τα παρακάτω μνημεία βρίσκεται στη Γρανάδα;',
+            options: ['Αλάμπρα', 'Μοναστήρι του Ελ Εσκοριάλ', 'Μεσκίτα της Κόρδοβας', 'Μουσείο Πράδο'],
+            correctAnswer: 'Αλάμπρα'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποια είναι η κύρια θρησκεία στην Ισπανία;',
+            options: ['Ισλάμ', 'Προτεσταντισμός', 'Ρωμαιοκαθολικισμός', 'Ορθοδοξία'],
+            correctAnswer: 'Ρωμαιοκαθολικισμός'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποιο μνημείο αποτελεί το εθνικό μουσείο τέχνης της Ισπανίας;',
+            options: ['Σαγράδα Φαμίλια', 'Μουσείο Πράδο', 'Καθεδρικός της Σεβίλλης', 'Αλάμπρα'],
+            correctAnswer: 'Μουσείο Πράδο'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποιο μνημείο της Ισπανίας είναι γνωστό για τα πολύχρωμα μωσαϊκά του;',
+            options: ['Μεσκίτα της Κόρδοβας', 'Πάρκο Γκουέλ', 'Μοναστήρι του Ελ Εσκοριάλ', 'Σαγράδα Φαμίλια'],
+            correctAnswer: 'Πάρκο Γκουέλ'
         },
         // New questions
         {
-            chapter: 2,
-            difficulty_level: 'Easy',
-            text: 'What is the chemical symbol for water?',
-            options: ['H2O', 'O2', 'CO2', 'NaCl'],
-            correctAnswer: 'H2O'
-        },
-        {
-            chapter: 4,
-            difficulty_level: 'Medium',
-            text: 'Who is known as the father of modern physics?',
-            options: ['Isaac Newton', 'Albert Einstein', 'Niels Bohr', 'Galileo Galilei'],
-            correctAnswer: 'Albert Einstein'
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Ποια ήταν η επίπτωση της μουσουλμανικής κατάκτησης στην Ιβηρική Χερσόνησο;',
+            options: ['Εισαγωγή της βυζαντινής τέχνης', 'Αφομοίωση των Ρωμαίων από τους Κέλτες', 'Ένταξη της Ιβηρικής Χερσονήσου στον μουσουλμανικό κόσμο', 'Ίδρυση της Ισπανίας ως μοναρχία'],
+            correctAnswer: 'Ένταξη της Ιβηρικής Χερσονήσου στον μουσουλμανικό κόσμο'
         },
         {
             chapter: 1,
             difficulty_level: 'Hard',
-            text: 'What is the powerhouse of the cell?',
-            options: ['Nucleus', 'Mitochondria', 'Ribosome', 'Endoplasmic Reticulum'],
-            correctAnswer: 'Mitochondria'
-        },
-        {
-            chapter: 2,
-            difficulty_level: 'Easy',
-            text: 'What is the largest planet in our solar system?',
-            options: ['Earth', 'Jupiter', 'Mars', 'Saturn'],
-            correctAnswer: 'Jupiter'
-        },
-        {
-            chapter: 4,
-            difficulty_level: 'Medium',
-            text: 'Who wrote "1984"?',
-            options: ['George Orwell', 'Aldous Huxley', 'F. Scott Fitzgerald', 'J.K. Rowling'],
-            correctAnswer: 'George Orwell'
-        },
-        {
-            chapter: 2,
-            difficulty_level: 'Hard',
-            text: 'What is the hardest natural substance on Earth?',
-            options: ['Gold', 'Iron', 'Diamond', 'Quartz'],
-            correctAnswer: 'Diamond'
-        },
-        {
-            chapter: 1,
-            difficulty_level: 'Easy',
-            text: 'What is the main ingredient in guacamole?',
-            options: ['Tomato', 'Onion', 'Avocado', 'Garlic'],
-            correctAnswer: 'Avocado'
-        },
-        {
-            chapter: 1,
-            difficulty_level: 'Medium',
-            text: 'What is the speed of light?',
-            options: ['299,792 km/s', '150,000 km/s', '300,000 km/s', '100,000 km/s'],
-            correctAnswer: '299,792 km/s'
-        },
-        {
-            chapter: 3,
-            difficulty_level: 'Hard',
-            text: 'Who developed the theory of relativity?',
-            options: ['Isaac Newton', 'Nikola Tesla', 'Albert Einstein', 'Stephen Hawking'],
-            correctAnswer: 'Albert Einstein'
-        },
-        {
-            chapter: 4,
-            difficulty_level: 'Easy',
-            text: 'What is the smallest unit of life?',
-            options: ['Cell', 'Molecule', 'Atom', 'Organ'],
-            correctAnswer: 'Cell'
-        },
-        {
-            chapter: 2,
-            difficulty_level: 'Medium',
-            text: 'What is the main gas found in the air we breathe?',
-            options: ['Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Hydrogen'],
-            correctAnswer: 'Nitrogen'
+            text: 'Ποιο μνημείο είναι γνωστό για τον συνδυασμό φυσικών στοιχείων και μοντέρνας αρχιτεκτονικής;',
+            options: ['Αλάμπρα', 'Πάρκο Γκουέλ', 'Καθεδρικός της Σεβίλλης', 'Μεσκίτα της Κόρδοβας'],
+            correctAnswer: 'Πάρκο Γκουέλ'
         },
         {
             chapter: 1,
             difficulty_level: 'Hard',
-            text: 'Who was the first person to walk on the moon?',
-            options: ['Buzz Aldrin', 'Yuri Gagarin', 'Neil Armstrong', 'Michael Collins'],
-            correctAnswer: 'Neil Armstrong'
+            text: 'Ποιο μνημείο περιλαμβάνει το Παλάτι των Νασρίντ και τον Γενεραλίφε;',
+            options: ['Μεσκίτα της Κόρδοβας', 'Αλάμπρα', 'Μοναστήρι του Ελ Εσκοριάλ', 'Πάρκο Γκουέλ'],
+            correctAnswer: 'Αλάμπρα'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Πότε ξεκίνησε η κατασκευή της Σαγράδα Φαμίλια;',
+            options: ['1702', '1882', '1922', '1982'],
+            correctAnswer: '1882'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Ποιο μνημείο της Ισπανίας ήταν αρχικά μιναρές ενός τζαμιού;',
+            options: ['Σαγράδα Φαμίλια', 'Πάρκο Γκουέλ', 'Καθεδρικός της Σεβίλλης (Γιράλντα)', 'Μουσείο Πράδο'],
+            correctAnswer: 'Καθεδρικός της Σεβίλλης (Γιράλντα)'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Ποιο μνημείο της Ισπανίας χτίστηκε από τον Φίλιππο Β\' τον 16ο αιώνα;',
+            options: ['Μεσκίτα της Κόρδοβας', 'Μοναστήρι του Ελ Εσκοριάλ', 'Αλάμπρα', 'Καθεδρικός της Σεβίλλης'],
+            correctAnswer: 'Μοναστήρι του Ελ Εσκοριάλ'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Ποιο μνημείο αποτελεί ένα από τα καλύτερα παραδείγματα της ισλαμικής αρχιτεκτονικής στην Ισπανία;',
+            options: ['Αλάμπρα', 'Πάρκο Γκουελ', 'Σαγράδα Φαμίλια', 'Μουσείο Πράδο'],
+            correctAnswer: 'Αλάμπρα'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Ποιο μνημείο της Ισπανίας είναι γνωστό για τις κολόνες και τα τόξα του, καθώς και για τον μιχράμπ;',
+            options: ['Μεσκίτα της Κόρδοβας', 'Καθεδρικός της Σεβίλλης', 'Μοναστήρι του Ελ Εσκοριάλ', 'Πάρκο Γκουέλ'],
+            correctAnswer: 'Μεσκίτα της Κόρδοβας'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Από πότε η Ισπανία δεν έχει επίσημη θρησκεία σύμφωνα με το Σύνταγμά της;',
+            options: ['1789', '1868', '1931', '1978'],
+            correctAnswer: '1978'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Easy',
+            text: 'Ποιο ήταν το κύριο κίνητρο του Χριστόφορου Κολόμβου για το ταξίδι του το 1492;',
+            options: ['Να ανακαλύψει νέες εμπορικές διαδρομές προς την Ασία', 'Να βρει νέα εδάφη για αποίκιση', 'Να αναζητήσει χρυσό και πολύτιμα πετράδια', 'Να εξερευνήσει την Αφρική'],
+            correctAnswer: 'Να ανακαλύψει νέες εμπορικές διαδρομές προς την Ασία'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Ποιες περιοχές του Νέου Κόσμου εξερεύνησε ο Χριστόφορος Κολόμβος κατά το πρώτο του ταξίδι;',
+            options: ['Ο Ηπειρωτικός Καναδάς και οι Μεξικανικές Παράκτιες περιοχές', 'Οι Μπαχάμες, η Κούβα και η Τζαμάικα', 'Οι Ηνωμένες Πολιτείες και ο Καναδάς', 'Η Βραζιλία και η Αργεντινή'],
+            correctAnswer: 'Οι Μπαχάμες, η Κούβα και η Τζαμάικα'
+        },
+        {
+            chapter: 1,
+            difficulty_level: 'Hard',
+            text: 'Ποιο από τα παρακάτω νησιά δεν ανακαλύφθηκε από τον Χριστόφορο Κολόμβο;',
+            options: ['Αγία Λουκία', 'Κούβα', 'Εξωτικές Αντίλλες', 'Μπαχάμες'],
+            correctAnswer: 'Αγία Λουκία'
         },
         {
             chapter: 2,
