@@ -18,7 +18,7 @@ exports.quiz_list = asyncHandler(async (req, res, next) => {
 
 exports.quiz1 = asyncHandler(async (req, res, next) => {
     const questions = await Question.find({ chapter: 1 });
-
+    
     res.render('quiz', {questions});
 })
 

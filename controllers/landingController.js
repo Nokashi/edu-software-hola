@@ -9,16 +9,16 @@ async function fetchChapterQuizzesDone(userId, chapterNum) {
             { 
                 $match: { 'performance_history.quiz_chapter': chapterNum } // Match only for quiz_chapter == ChapterNum
             },
-            { $count: 'chapter1QuizzesDone' } // Count the matched documents
+            { $count: 'chapterQuizzesDone' } // Count the matched documents
         ]);
 
         if (result.length > 0) {
-            return result[0].chapter1QuizzesDone;
+            return result[0].chapterQuizzesDone;
         } else {
             return 0; // Return 0 if no quizzes are found for chapter 1
         }
     } catch (error) {
-        console.error('Error fetching chapter 1 quizzes:', error);
+        console.error('Error fetching chapter quizzes:', error);
         throw error;
     }
 }

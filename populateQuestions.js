@@ -170,7 +170,7 @@ db.once('open', async () => {
             correctAnswer: 'Αγία Λουκία'
         },
         {
-            chapter: 1,
+            chapter: 2,
             difficulty_level: 'Easy',
             text: 'Ποια περιοχή της Ισπανίας είναι γνωστή για το φλαμένκο;',
             options: ['Καταλονία', 'Ανδαλουσία', 'Μαρδίτη', 'Γαλικία'],
