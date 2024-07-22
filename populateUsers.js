@@ -5,6 +5,7 @@ const User = require('./models/user'); // Adjust the path as per your project st
 
 async function connectDB() {
     await mongoose.connect('mongodb://localhost:27017/edu-software-hola')
+    // await mongoose.connect('mongodb+srv://nokashi:fTiXxQ5WBUPkWn64@edu-software.28ojlgs.mongodb.net/?retryWrites=true&w=majority&appName=edu-software')
 }
   
 
