@@ -27,7 +27,6 @@ p {
 }
 
 
-
 .navbar {
     width: 100%;
     background-color: #0a0a0a;
@@ -141,9 +140,50 @@ footer {
     border-radius: 5px;
     background-color: #ffc400;
     color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter img {
+    align-self: center;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
+}
+
+
+.table-container {
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid #c60b1e;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #c60b1e;
+}
+
+th {
+    background-color: #c60b1e;
+    color: #fff;
+}
+
+td {
+    background-color: white;
+    color: #000;
+}
+
+tr:nth-child(even) td {
+    background-color: #dbd8d8;
+    color: #000;
 }
