@@ -115,7 +115,7 @@ function showQuizButton() {
     const chapterContent = document.getElementById('buttons');
     const quizButton = document.createElement('button');
     quizButton.className = 'buttonSeeMore';
-    quizButton.textContent = 'Take Quiz for this Chapter';
+    quizButton.textContent = 'Πάμε για εξάσκηση!';
     quizButton.onclick = function() {
         window.location.href = '/quizzes/1';
     };
