@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 const Question = require('./models/question'); // Adjust the path as per your project structure
-
+require('dotenv').config();
 
 async function connectDB() {
-    await mongoose.connect('mongodb://localhost:27017/edu-software-hola')
-    // mongoose.connect(process.env.MONGO_URI)
+    // await mongoose.connect('mongodb://localhost:27017/edu-software-hola')
+    const connectionString = process.env.MONGO_URI
+    mongoose.connect(connectionString)
 }
   
 
