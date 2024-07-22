@@ -17,4 +17,7 @@ router.get('/3', courseController.course3);
 // chapter 4
 router.get('/4', courseController.course4);
 
+//chapter 5
+router.get('/5', courseController.course5)
+
 module.exports = router;

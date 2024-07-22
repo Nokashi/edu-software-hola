@@ -4,7 +4,8 @@ const courses = [
     { id:1, title: 'Course 1', description: 'Description of Course 1', level: 'Beginner' },
     { id:2, title: 'Course 2', description: 'Description of Course 2', level: 'Intermediate' },
     { id:3, title: 'Course 3', description: 'Description of Course 3', level: 'Advanced' },
-    { id:4, title: 'Course 4', description: 'Description of Course 4', level: 'Expert' }
+    { id:4, title: 'Course 4', description: 'Description of Course 4', level: 'Expert' },
+    { id:5, title: 'Course 5', description: 'Description of Course 5', level: 'no idea'}
 ];
 
 
@@ -37,4 +38,11 @@ exports.course4 = asyncHandler(async (req, res, next) => {
     res.render('course4');
 
 })
+
+exports.course5 =  asyncHandler(async (req, res, next) => {
+    res.render('course5');
+
+})
+
+
 

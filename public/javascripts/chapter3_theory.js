@@ -207,6 +207,93 @@ const chapter3_theory = [
     ωστόσο η απάντηση είναι απλή, κοιτάς την κατάληξη του απαρέμφατου και χρησιμοποιείς την ανάλογη κατάληξη.</p>`
     ,
 
+    `
+    <div style="display: flex; gap: 5px;">
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Ισπανικά</th>
+                <th>Ελληνικά</th>
+            </tr>
+            <tr>
+                <td><b>Lunes (λούνες)</b></td>
+                <td>Δευτέρα</td>
+            </tr>
+            <tr>
+                <td><b>Martes (μάρτες)</b></td>
+                <td>Τρίτη</td>
+            </tr>
+            <tr>
+                <td><b>Miércoles (μιέρκολες)</b></td>
+                <td>Τετάρτη</td>
+            </tr>
+            <tr>
+                <td><b>Jueves (χουέβες)</b></td>
+                <td>Πέμπτη</td>
+            </tr>
+            <tr>
+                <td><b>Viernes (βιέρνες)</b></td>
+                <td>Παρασκευή</td>
+            </tr>
+            <tr>
+                <td><b>Sábado (σάβαδο)</b></td>
+                <td>Σάββατο</td>
+            </tr>
+            <tr>
+                <td><b>Domingo (ντομίνγκο)</b></td>
+                <td>Κυριακή</td>
+            </tr>
+        </table>
+    </div>
+    <div class="table-container">
+    <table>
+        <tr>
+            <th>Ισπανικά</th>
+            <th>Ελληνικά</th>
+            <th>Ισπανικά</th>
+            <th>Ελληνικά</th>
+        </tr>
+        <tr>
+            <td><b>Enero</b> <br> (ενέρο)</td>
+            <td>Ιανουάριος</td>
+            <td><b>Julio</b> <br> (χούλιο)</td>
+            <td>Ιούλιος</td>
+        </tr>
+        <tr>
+            <td><b>Febrero</b> <br> (φεμπρέρο)</td>
+            <td>Φεβρουάριος</td>
+            <td><b>Agosto</b> <br> (αγκόστο)</td>
+            <td>Αύγουστος</td>
+        </tr>
+        <tr>
+            <td><b>Marzo</b> <br> (μάρθο)</td>
+            <td>Μάρτιος</td>
+            <td><b>Septiembre</b> <br> (σεπτιέμπρε)</td>
+            <td>Σεπτέμβρης</td>
+        </tr>
+        <tr>
+            <td><b>Abril</b> <br> (αμπρίλ)</td>
+            <td>Απρίλιος</td>
+            <td><b>Octobre</b> <br> (οκτούμπρε)</td>
+            <td>Οκτώβριος</td>
+        </tr>
+        <tr>
+            <td><b>Mayo</b> <br> (μάγιο)</td>
+            <td>Μάιος</td>
+            <td><b>Noviembre</b> (νοβιέμπρε)</td>
+            <td>Νοέμβριος</td>
+        </tr>
+        <tr>
+            <td><b>Junio</b> <br> (χούνιο)</td>
+            <td>Ιούνιος</td>
+            <td><b>Diciembre</b> <br> (ντιθιέμπρε)</td>
+            <td>Δεκέμβριος</td>
+        </tr>
+    </table>
+    </div>
+    </div>
+
+    `,
 
     ];
 
