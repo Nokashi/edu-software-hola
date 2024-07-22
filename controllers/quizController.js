@@ -11,32 +11,11 @@ const quizzes = [
     { id: 5, title: 'Quiz on Everything you have learned', description: 'Test your knowledge on all Courses'}
 ];
 
-async function fetchChapterQuizzesDone(userId, chapterNum) {
-    try {
-        const result = await User.aggregate([
-            { $match: { _id: userId } }, // Match the user by their _id
-            { $unwind: '$performance_history' }, // Unwind the performance_history array
-            { 
-                $match: { 'performance_history.quiz_chapter': chapterNum } // Match only for quiz_chapter == ChapterNum
-            },
-            { $count: 'chapterQuizzesDone' } // Count the matched documents
-        ]);
-
-        if (result.length > 0) {
-            return result[0].chapterQuizzesDone;
-        } else {
-            return 0; // Return 0 if no quizzes are found for chapter 1
-        }
-    } catch (error) {
-        console.error('Error fetching chapter quizzes:', error);
-        throw error;
-    }
-}
 
 exports.quiz_list = asyncHandler(async (req, res, next) => {
     // const userId = req.user._id
     // quizzesDone = await fetchChapterQuizzesDone(userId, 1);
-
+    
     res.render('quizzes', {quizzes});
 });
 
@@ -63,32 +42,142 @@ exports.quiz1 = asyncHandler(async (req, res, next) => {
         const easyRatio = 1 - hardRatio;
 
         // Query questions based on difficulty levels
-        const hardQuestions = await Question.find({ chapter: 1, difficulty_level: 'Hard' }).limit(Math.ceil(10 * hardRatio));
-        const easyQuestions = await Question.find({ chapter: 1, difficulty_level: 'Easy' }).limit(Math.floor(10 * easyRatio));
+        const hardQuestions = await Question.aggregate([
+            { $match: { chapter: 1, difficulty_level: 'Hard' } },
+            { $sample: { size: Math.ceil(10 * hardRatio) } }
+        ]);
+        
+        const easyQuestions = await Question.aggregate([
+            { $match: { chapter: 1, difficulty_level: 'Easy' } },
+            { $sample: { size: Math.floor(10 * easyRatio) } }
+        ]);        
 
         // Combine hard and easy questions
         questions = [...hardQuestions, ...easyQuestions];
     }
 
     // const questions = await Question.find({ chapter: 1 });
+    console.log(questions)
     res.render('quiz', {questions});
 });
 
 exports.quiz2 = asyncHandler(async (req, res, next) => {
-    const questions = await Question.find({ chapter: 2 });
+    const userId = req.user._id
+    const userData = await User.findById(userId);
 
+    const averageGrade = userData.average_grade;
+    const quizzesCompleted = userData.performance_history.filter(entry => entry.quiz_chapter === 2).length;
+
+    let questions = []
+
+    if (quizzesCompleted < 3) {
+        // If less than 3 quizzes completed, select 10 random questions
+        questions = await Question.aggregate([
+            { $match: { chapter: 1 } },
+            { $sample: { size: 10 } }
+        ]);
+    } else {
+        // Calculate ratio of hard and easy questions based on average grade
+        const hardRatio = averageGrade / 100;
+        const easyRatio = 1 - hardRatio;
+
+        // Query questions based on difficulty levels
+        const hardQuestions = await Question.aggregate([
+            { $match: { chapter: 2, difficulty_level: 'Hard' } },
+            { $sample: { size: Math.ceil(10 * hardRatio) } }
+        ]);
+        
+        const easyQuestions = await Question.aggregate([
+            { $match: { chapter: 2, difficulty_level: 'Easy' } },
+            { $sample: { size: Math.floor(10 * easyRatio) } }
+        ]);        
+
+        // Combine hard and easy questions
+        questions = [...hardQuestions, ...easyQuestions];
+    }
+
+    // const questions = await Question.find({ chapter: 1 });
+    console.log(questions)
     res.render('quiz', {questions});
 });
 
 exports.quiz3 = asyncHandler(async (req, res, next) => {
-    const questions = await Question.find({ chapter: 3 });
+    const userId = req.user._id
+    const userData = await User.findById(userId);
 
+    const averageGrade = userData.average_grade;
+    const quizzesCompleted = userData.performance_history.filter(entry => entry.quiz_chapter === 3).length;
+
+    let questions = []
+
+    if (quizzesCompleted < 3) {
+        // If less than 3 quizzes completed, select 10 random questions
+        questions = await Question.aggregate([
+            { $match: { chapter: 1 } },
+            { $sample: { size: 10 } }
+        ]);
+    } else {
+        // Calculate ratio of hard and easy questions based on average grade
+        const hardRatio = averageGrade / 100;
+        const easyRatio = 1 - hardRatio;
+
+        // Query questions based on difficulty levels
+        const hardQuestions = await Question.aggregate([
+            { $match: { chapter: 3, difficulty_level: 'Hard' } },
+            { $sample: { size: Math.ceil(10 * hardRatio) } }
+        ]);
+        
+        const easyQuestions = await Question.aggregate([
+            { $match: { chapter: 3, difficulty_level: 'Easy' } },
+            { $sample: { size: Math.floor(10 * easyRatio) } }
+        ]);        
+
+        // Combine hard and easy questions
+        questions = [...hardQuestions, ...easyQuestions];
+    }
+
+    // const questions = await Question.find({ chapter: 1 });
+    console.log(questions)
     res.render('quiz', {questions});
 });
 
 exports.quiz4 = asyncHandler(async (req, res, next) => {
-    const questions = await Question.find({ chapter: 4 });
+    const userId = req.user._id
+    const userData = await User.findById(userId);
 
+    const averageGrade = userData.average_grade;
+    const quizzesCompleted = userData.performance_history.filter(entry => entry.quiz_chapter === 4).length;
+
+    let questions = []
+
+    if (quizzesCompleted < 3) {
+        // If less than 3 quizzes completed, select 10 random questions
+        questions = await Question.aggregate([
+            { $match: { chapter: 1 } },
+            { $sample: { size: 10 } }
+        ]);
+    } else {
+        // Calculate ratio of hard and easy questions based on average grade
+        const hardRatio = averageGrade / 100;
+        const easyRatio = 1 - hardRatio;
+
+        // Query questions based on difficulty levels
+        const hardQuestions = await Question.aggregate([
+            { $match: { chapter: 4, difficulty_level: 'Hard' } },
+            { $sample: { size: Math.ceil(10 * hardRatio) } }
+        ]);
+        
+        const easyQuestions = await Question.aggregate([
+            { $match: { chapter: 4, difficulty_level: 'Easy' } },
+            { $sample: { size: Math.floor(10 * easyRatio) } }
+        ]);        
+
+        // Combine hard and easy questions
+        questions = [...hardQuestions, ...easyQuestions];
+    }
+
+    // const questions = await Question.find({ chapter: 1 });
+    console.log(questions)
     res.render('quiz', {questions});
 });
 
