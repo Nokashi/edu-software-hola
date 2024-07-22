@@ -199,6 +199,11 @@ exports.quizAll = asyncHandler(async (req, res, next) => {
 exports.submit_quiz = asyncHandler(async (req, res, next) => {
     const answers = req.body
 
+    const weights = {
+        'Easy': 1,
+        'Hard': 2
+    };
+
     // Initialize an empty object to store extracted answers
     const userAnswers = {};
     let userID;
@@ -226,17 +231,21 @@ exports.submit_quiz = asyncHandler(async (req, res, next) => {
     console.log(questions)
 
     let score = 0;
+    let max_score = 0;
     let totalQuestions = questions.length;
+    let correct_answers = 0;
 
     // Compare the submitted answers with the correct answers
     questions.forEach(question => {
         if (userAnswers[question._id] === question.correctAnswer) {
-            score++;
+            score += weights[question.difficulty_level];
+            correct_answers++
         }
+        max_score += weights[question.difficulty_level]
     });
 
     // Calculate the percentage score
-    const percentageScore = (score / totalQuestions) * 100;
+    const percentageScore = (score / max_score) * 100;
 
     // Update the user's performance history and average grade
     const user = await User.findById(userID);
@@ -263,7 +272,7 @@ exports.submit_quiz = asyncHandler(async (req, res, next) => {
         results_message = "Μάλλον θα πρέπει να κάνουμε λίγο ακόμα επανάληψη. Με μεθοδικότητα θα τα πας ακομα καλύτερα την επόμενη φορα!"
     }
 
-    res.render('quiz_results', {percentageScore, score, totalQuestions, results_message})
+    res.render('quiz_results', {percentageScore, correct_answers, totalQuestions, results_message})
 });
 
 

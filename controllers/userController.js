@@ -1,6 +1,5 @@
 const asyncHandler = require('express-async-handler')
 const User = require('../models/user');
-const { render } = require('ejs');
 
 exports.user_list = asyncHandler(async (req, res, next) => {
     const users = await User.find();
@@ -8,6 +7,11 @@ exports.user_list = asyncHandler(async (req, res, next) => {
 });
 
 exports.profile = asyncHandler(async (req, res, next) => {
-    const user = await User.findById(req.params.id);
-    res.render('profile', { user });
+    if(req.isAuthenticated()){
+        const user = await User.findById(req.params.id);
+        res.render('profile', { user });
+    } else {
+        res.render('session-expired')
+    }
+    
 })
