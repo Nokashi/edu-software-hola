@@ -10,10 +10,16 @@ body {
             
     margin: 20px;          
     padding: 20px;         
-    background-color: #ffffff; 
+    background-color: antiquewhite; 
     border: 1px solid #cccccc;         
     border-radius: 5px;          
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
         
 .profile-container h2 {
@@ -31,17 +37,50 @@ body {
     margin-top: 20px;
 }
 
-.profile-container .performance-history table {
 
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ffc400; /* Optional: adds a border around the image */
+}
+.profile-picture img {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+    height: 100%;
+    object-fit: cover;
 }
 
-.profile-container .performance-history th,
-.profile-container .performance-history td {
+.table-container {
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid #c60b1e;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    border: 1px solid #cccccc;
-    padding: 8px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
     text-align: left;
+    border: 1px solid #c60b1e;
+}
+
+th {
+    background-color: #c60b1e;
+    color: #fff;
+}
+
+td {
+    background-color: white;
+    color: #000;
+}
+
+tr:nth-child(even) td {
+    background-color: #dbd8d8;
+    color: #000;
 }
