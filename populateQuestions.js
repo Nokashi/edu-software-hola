@@ -336,8 +336,175 @@ db.once('open', async () => {
             text: 'Ποιο από τα παρακάτω δεν είναι στοιχείο του φλαμένκο;',
             options: ['Cante', 'Baile', 'Fandango', 'Toque'],
             correctAnswer: 'Fandango'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι το ισπανικό αντίστοιχο της λέξης «Καλημέρα»;',
+            options: ['¡Buenas noches!', '¡Hola!', '¡Buenos días!', '¡Gracias!'],
+            correctAnswer: '¡Buenos días!'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Πως λέγεται το αντίο στα ισπανικά;',
+            options: ['¡Hola!', '¡Adiós!', '¡Gracias!', '¡Buenos días!'],
+            correctAnswer: '¡Adiós!'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι το ερώτημα «Πως σε λένε; » στα ισπανικά;',
+            options: ['¿Quién eres tú?', '¿Cómo estás?', '¿Cómo te llamas?', '¿Qué hora es?'],
+            correctAnswer: '¿Cómo te llamas?'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Πως λέγεται το Σαββατοκύριακο στα ισπανικά;',
+            options: ['El fin de semana', 'En dos meses', 'La semana pasada', 'El proximo mes'],
+            correctAnswer: 'El fin de semana'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποιο από τα ρήματα εκφράζει κάτι παροδικό σε χρόνο;',
+            options: ['Tener', 'Estar', 'Hacer', 'Ser'],
+            correctAnswer: 'Estar'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποιο από τα παρακάτω ρήματα δεν είναι ομαλό;',
+            options: ['Comer', 'Vivir', 'Hablar', 'Ir'],
+            correctAnswer: 'Vivir'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι η μετάφραση του “Yo soy” στα ελληνικά;',
+            options: ['Εγώ πηγαίνω', 'Εγώ έχω', 'Εγώ είμαι', 'Εγώ κάνω'],
+            correctAnswer: 'Εγώ είμαι'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι η μετάφραση του “Nosotros hablamos” στα ελληνικά;',
+            options: ['Εμείς τρώμε', 'Εμείς μιλάμε', 'Εμείς ζούμε', 'Εμείς πηγαίνουμε'],
+            correctAnswer: 'Εμείς μιλάμε'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποιο λέγεται το ρήμα «έρχομαι» στα ισπανικά',
+            options: ['Hacer', 'Tener', 'Venir', 'Decir'],
+            correctAnswer: 'Venir'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποια είναι η σωστή κλίση του ρήματος “tener” για το πρώτο ενικό',
+            options: ['Tengo', 'Tienes', 'Tiene', 'Tenéis'],
+            correctAnswer: 'Tengo'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Ποιο ρήμα σημαίνει “πηγαίνω” στα ισπανικά;',
+            options: ['Decir', 'Venir', 'Saber', 'Ir'],
+            correctAnswer: 'Ir'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Easy',
+            text: 'Πως λέγεται η Παρασκευή στα ισπανικά;',
+            options: ['Viernes', 'Miercoles', 'Martes', 'Domingo'],
+            correctAnswer: 'Viernes'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Ποια είναι η σωστή κλίση του ρήματος “vivir” στο δεύτερο πληθυντικό;',
+            options: ['Viven', 'Vivimos', 'Vivís', 'Vive'],
+            correctAnswer: 'Vivís'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Πως θα πούμε «15 Ιουνίου» στα ισπανικά',
+            options: ['El quince de Junio', 'El trece de Junio', 'El quince de Julio', 'El cinco de Julio'],
+            correctAnswer: 'El quince de Junio'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Ποια είναι η σωστή κλίση του ρήματος “decir” για το εσείς;',
+            options: ['Decís', 'Decimos', 'Digo', 'Dice'],
+            correctAnswer: 'Decís'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Πως λέμε «το Σάββατο στις 5 το απόγευμα» στα ισπανικά;',
+            options: ['El sabado a las cinco de la tarde ', 'El sabado a las ocho de la mañana', 'El Domino a las cinco de la noche', 'El domingo a la una de la tarde'],
+            correctAnswer: 'El sábado a las cinco de la tarde'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Πως λέμε «τον επόμενο Μάιο» στα ισπανικά;',
+            options: ['El próximo mayo', 'el mayo pasado', 'el abril pasado', 'el próximo mes'],
+            correctAnswer: 'el proximo mayos'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Με ποια φράση θα πούμε «Είμαι στην Μαδρίτη για διακοπες»;',
+            options: ['Soy en Madrid de vacaciones', 'Voy en Madrid de vacaciones', 'Estoy en Madrid de vacaciones', 'Quiero ir en Madrid de vacaciones'],
+            correctAnswer: 'Viernes'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Με ποια φράση θα πούμε «μεθαύριο το μεσημερι στις 2»;',
+            options: ['Anteayer a las dos de la tarde', 'Mañana a las dos de la noche', 'Pasado mañana a las dos de la tarde', 'Hoy a las dos de la tarde'],
+            correctAnswer: 'Pasado mañana a las dos de la tarde'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Ποια είναι η σωστή κλίση του ρήματος “querer” για το εσείς;',
+            options: ['Queremos', 'Quieres', 'Queréis', 'Quiero'],
+            correctAnswer: 'Queréis'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Ποια είναι η σωστή κλίση του ρήματος “ir” για το τρίτο πληθυντικό;',
+            options: ['Vamos', 'Va', 'Vais', 'Van'],
+            correctAnswer: 'Van'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Ποια είναι η σωστή μετάφραση της φράσης ¨Son las dos;',
+            options: ['Η ώρα είναι μία', 'Η ώρα είναι έντεκα', 'Η ώρα είναι δύο', 'Η ώρα είναι δώδεκα'],
+            correctAnswer: 'Η ώρα είναι δύο'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Ποιο είναι το αντίστοιχο «προχθές» στα ισπανικά;',
+            options: ['Mañana', 'Hoy', 'Anteayer', 'Ayer'],
+            correctAnswer: 'Anteayer'
+        },
+        {
+            chapter: 3,
+            difficulty_level: 'Hard',
+            text: 'Ποια ρήμα σημαίνει «λεω» στα ισπανικά;',
+            options: ['Saber', 'Querer', 'Decir', 'Hablar'],
+            correctAnswer: 'Decir'
         }
-
     ];
     
 
