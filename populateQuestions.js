@@ -461,7 +461,7 @@ db.once('open', async () => {
             difficulty_level: 'Hard',
             text: 'Με ποια φράση θα πούμε «Είμαι στην Μαδρίτη για διακοπες»;',
             options: ['Soy en Madrid de vacaciones', 'Voy en Madrid de vacaciones', 'Estoy en Madrid de vacaciones', 'Quiero ir en Madrid de vacaciones'],
-            correctAnswer: 'Viernes'
+            correctAnswer: 'Estoy en Madrid de vacaciones'
         },
         {
             chapter: 3,
