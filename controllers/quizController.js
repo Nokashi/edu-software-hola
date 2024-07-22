@@ -242,7 +242,20 @@ exports.submit_quiz = asyncHandler(async (req, res, next) => {
     avg_grade = user.average_grade;
     await user.save();
 
-    res.render('quiz_results', {percentageScore, score, totalQuestions})
+    let results_message;
+
+    if (percentageScore >= 90) {
+
+        results_message = "Μπράβο σου! τα πήγες περίφημα!"
+    } else if (percentageScore >= 60)
+    {
+        results_message = "Πάρα πολύ καλή προσπάθεια! Συνέχισε έτσι."
+    }
+    else {
+        results_message = "Μάλλον θα πρέπει να κάνουμε λίγο ακόμα επανάληψη. Με μεθοδικότητα θα τα πας ακομα καλύτερα την επόμενη φορα!"
+    }
+
+    res.render('quiz_results', {percentageScore, score, totalQuestions, results_message})
 });
 
 

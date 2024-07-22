@@ -1,5 +1,3 @@
-<!-- quiz_results.ejs -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +8,16 @@
 </head>
 <body>
     <div class="quiz-results-container">
-        <h2>Quiz Results</h2>
-        <p>Your Score: <%= score %> / <%= totalQuestions %></p>
-        <p>Percentage Score: <%= percentageScore.toFixed(2) %>%</p>
+        <div>
+            <h2>Αποτελέσματα Quiz</h2>
+            <p>Ο Βαθμός σου: <%= score %> / <%= totalQuestions %></p>
+            <p>Ποσοστό: <%= percentageScore.toFixed(2) %>%</p>
 
-        <a href="/" class="btn">Back to Homepage</a>
-        <a href="/courses" class="btn">Back to Courses</a>
-        <a href="/quizzes" class="btn">Back to Quizzes</a>
+            <p><%= results_message %></p>
+            <a href="/" class="btn">Επιστροφή στην αρχική σελίδα</a>
+            <a href="/courses" class="btn">Επιστροφή στον κατάλογο μαθημάτων</a>
+            <a href="/quizzes" class="btn">Επιστροφή στον κατάλογο Quiz</a>
+        </div>
     </div>
 </body>
 </html>
