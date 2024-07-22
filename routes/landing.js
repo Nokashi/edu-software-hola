@@ -8,6 +8,4 @@ router.get('/', landingController.landing_page_bill);
 
 router.get('/courses-preview', landingController.courses_preview)
 
-router.get('/test', landingController.courses_done)
-
 module.exports = router;

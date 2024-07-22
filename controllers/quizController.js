@@ -21,8 +21,14 @@ async function hasCompletedAllCourses(userId) {
 exports.quiz_list = asyncHandler(async (req, res, next) => {
     // const userId = req.user._id
     // quizzesDone = await fetchChapterQuizzesDone(userId, 1);
-    const check_completeness = await hasCompletedAllCourses(req.user._id)
-    res.render('quizzes', {check_completeness});
+    if (!req.isAuthenticated()) 
+    {
+        res.render('session-expired')
+    }
+    else {
+        const check_completeness = await hasCompletedAllCourses(req.user._id)
+        res.render('quizzes', {check_completeness});
+    }
 });
 
 exports.quiz1 = asyncHandler(async (req, res, next) => {
@@ -187,12 +193,10 @@ exports.quiz4 = asyncHandler(async (req, res, next) => {
 
 exports.quizAll = asyncHandler(async (req, res, next) => {
     const questions = await Question.find();
-
     res.render('quiz', {questions});
 });
 
 exports.submit_quiz = asyncHandler(async (req, res, next) => {
-    
     const answers = req.body
 
     // Initialize an empty object to store extracted answers

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Expired</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+            font-size: 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: #ffc400;
+            color: #fff;
+            text-align: center;
+        }
+
+        .session-expired {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            color: #333;
+        }
+
+        .session-expired h1 {
+            color: #c60b1e;
+            font-size: 24px;
+        }
+
+        .session-expired p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .button {
+            background-color: #c60b1e;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #a00c17;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="session-expired">
+            <h1>Η Σύνοδος σας έληξε </h1>
+            <p>Παρακαλώ συνδεθείτε ξανά για να συνεχίσετε. Εναλλακτικά, μπορείτε να επιστρέψετε στην αρχική σελίδα</p>
+            <a href="/login" class="button">Συνδεση</a>
+            <a href="/" class="button">Αρχικη Σελιδα</a>
+        </div>
+    </div>
+</body>
+</html>
