@@ -80,13 +80,42 @@
         </div>
         <main class="main-content">
             <div class="course-container">
-                <% quizzes.forEach(quiz => { %>
+                <div class="course">
+                    <h2>Quiz for Course 1</h2>
+                    <p>Test your knowledge on Course 1</p>
+                    <a class="button" href="quizzes/1">Go to Quiz</a>
+                </div>
+                <div class="course">
+                    <h2>Quiz for Course 2</h2>
+                    <p>Test your knowledge on Course 2</p>
+                    <a class="button" href="quizzes/2">Go to Quiz</a>
+                </div>
+                <div class="course">
+                    <h2>Quiz for Course 3</h2>
+                    <p>Test your knowledge on Course 3</p>
+                    <a class="button" href="quizzes/3">Go to Quiz</a>
+                </div>
+                <div class="course">
+                    <h2>Quiz for Course 4</h2>
+                    <p>Test your knowledge on Course 4</p>
+                    <a class="button" href="quizzes/4">Go to Quiz</a>
+                </div>
+                <div class="course">
+                    <h2>Quiz for Course 5</h2>
+                    <p>Test your knowledge on Course 5</p>
+                    <a class="button" href="quizzes/5">Go to Quiz</a>
+                </div>
+                <% if (check_completeness) { %>
                     <div class="course">
-                        <h2><%= quiz.title %></h2>
-                        <p><%= quiz.description %></p>
-                        <a class="button" href="<%= `quizzes/${quiz.id}`%>">Go to Quiz</a>
+                        <h2>Quiz on everything you have learned</h2>
+                        <p>Test your knowledge of the entire curriculum </p>
+                        <a class="button" href="quizzes/6">Go to Quiz</a> <!-- TODO: add the actual route if needed-->
                     </div>
-                <% }) %>
+                <% } else { %>
+                    <div class="course">
+                        <h2>Κάνε πρώτα ένα απο κάθε αλλο quiz</h2>
+                    </div>
+                <% } %>
             </div>
         </main>
         <footer>

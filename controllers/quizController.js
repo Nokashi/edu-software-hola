@@ -1,25 +1,29 @@
 const Question = require('../models/question');
 const User = require('../models/user')
-const Scenario = require('../models/scenario')
 const asyncHandler = require('express-async-handler');
 
-const quizzes = [
-    { id: 1, title: 'Quiz for Course 1', description: 'Test your knowledge on Course 1' },
-    { id: 2, title: 'Quiz for Course 2', description: 'Test your knowledge on Course 2' },
-    { id: 3, title: 'Quiz for Course 3', description: 'Test your knowledge on Course 3' },
-    { id: 4, title: 'Quiz for Course 4', description: 'Test your knowledge on Course 4'},
-    { id: 5, title: 'Quiz on Everything you have learned', description: 'Test your knowledge on all Courses'}
-];
+async function hasCompletedAllCourses(userId) {
+    const user = await User.findById(userId);
+    
+    if (!user || !user.performance_history) {
+        return false;
+    }
 
+    const completedCourses = new Set();
+
+    user.performance_history.forEach(entry => {
+        completedCourses.add(entry.quiz_chapter);
+    });
+
+    return completedCourses.size >= 6;
+}
 
 exports.quiz_list = asyncHandler(async (req, res, next) => {
     // const userId = req.user._id
     // quizzesDone = await fetchChapterQuizzesDone(userId, 1);
-    
-    res.render('quizzes', {quizzes});
+    const check_completeness = await hasCompletedAllCourses(req.user._id)
+    res.render('quizzes', {check_completeness});
 });
-
-
 
 exports.quiz1 = asyncHandler(async (req, res, next) => {
     const userId = req.user._id
