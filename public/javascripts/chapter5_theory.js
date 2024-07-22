@@ -31,6 +31,7 @@ function showNextChapter() {
         currentChapter++;
         if (currentChapter == chapter5_theory.length)
         {
+            document.getElementById('nextChapterButton').remove()
             showQuizButton();
         }
     } else {

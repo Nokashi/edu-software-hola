@@ -25,12 +25,13 @@ function showNextChapter() {
         const contentDiv = document.getElementById('content');
         const newDiv = document.createElement('div');
         newDiv.classList.add('chapter');
-        newDiv.textContent = chapter4_theory[currentChapter];
+        newDiv.innerHTML = chapter4_theory[currentChapter];
         contentDiv.appendChild(newDiv);
         newDiv.scrollIntoView({ behavior: 'smooth' });
         currentChapter++;
         if (currentChapter == chapter4_theory.length)
         {
+            document.getElementById('nextChapterButton').remove()
             showQuizButton();
         }
     } else {
