@@ -80,14 +80,36 @@
         </div>
         <main class="main-content">
             <div class="course-container">
-                <% courses.forEach(course => { %>
-                    <div class="course">
-                        <h2><%= course.title %></h2>
-                        <p><%= course.description %></p>
-                        <p>Level: <%= course.level %></p>
-                        <a class="button" href="<%= `courses/${course.id}`%>">Go to Course</a>
-                    </div>
-                <% }) %>
+                <div class="course">
+                    <h2>Course 1</h2>
+                    <p>Description of Course 1</p>
+                    <p>Level: Easy</p>
+                    <a class="button" href="courses/1">Go to Course</a>
+                </div>
+                <div class="course">
+                    <h2>Course 2</h2>
+                    <p>Description of Course 2</p>
+                    <p>Level: Medium</p>
+                    <a class="button" href="courses/2">Go to Course</a>
+                </div>
+                <div class="course">
+                    <h2>Course 3</h2>
+                    <p>Description of Course 3</p>
+                    <p>Level: Easy</p>
+                    <a class="button" href="courses/3">Go to Course</a>
+                </div>
+                <div class="course">
+                    <h2>Course 4</h2>
+                    <p>Description of Course 4</p>
+                    <p>Level: Easy</p>
+                    <a class="button" href="courses/4">Go to Course</a>
+                </div>
+                <div class="course">
+                    <h2>Course 5</h2>
+                    <p>Description of Course 5</p>
+                    <p>Level: Easy</p>
+                    <a class="button" href="courses/5">Go to Course</a>
+                </div>
             </div>
         </main>
         <footer>
