@@ -420,7 +420,7 @@ const chapter4_theory = [
                 </tr>
                 <tr>
                     <td>El gazpacho (γκαθπάτσο)</td>
-                    <td>Κρύα σούπα/td>
+                    <td>Κρύα σούπα</td>
                     <td>El queso (κέσο)</td>
                     <td>τυρί</td>
                 </tr>
@@ -463,10 +463,490 @@ const chapter4_theory = [
             </tbody>
         </table>
     </div>
+
+    <p>Κάτι που επίσης χρειάζεται να αναφέρουμε είναι πως λέγεται το «και» και το «ή» στα ισπανικά, καθώς θα μας χρειαστεί. <br>
+    Το <b>και</b> λέγεται <b>y</b> (προφέρεται «ή») και το <b>ή</b> λέγεται <b>ο</b>.</p>
     `,
 
+    `
+    <p>Ας δούμε ένα παράδειγμα διαλόγου σε εστιατόριο, για να είναι πιο εύκολο στην κατανόηση του. Εδώ αξίζει να σημειώσουμε πως όταν οι ισπανοί θέλουν να είναι ευγενικοί, χρησιμοποιούν τρίτο ενικό/πληθυντικό.</p>
+
+    <p class="left-dialogue">
+    <b>¡Hola, buenas tardes! ¿Cómo puedo ayudarle?</b> <br><br>
+    «Καλησπέρα σας! Πως θα μπορούσα να βοηθήσω;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Hola, buenas tardes. Una mesa para 2 personas por favor.</b> <br><br>
+    «Καλησπέρα σας. Ένα τραπέζι για 2 άτομα παρακαλώ.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>¡Po supuesto! De aquí, por favor.</b> <br><br>
+    «φυσικά! Από εδώ, παρακαλώ.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>¿Qué les gustarían de comer?</b> <br><br>
+    «Τι θα θέλατε να φάτε;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Quisiera una paella de mariscos, por favor.</b> <br><br>
+    «Θα ήθελα μια παέγια με θαλασσινά παρακαλώ»
+    </p>
+
+    <p class="left-dialogue">
+    <b>¿Y para la mujer?</b> <br><br>
+    «Και για την κυρία;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>La pasta con pollo para mí, por favor.</b> <br><br>
+    «Μια μακαρονάδα με κοτόπουλο για εμένα, παρακαλώ.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>Vale. ¿Algo de beber?</b> <br><br>
+    Εντάξει. Κάτι για να πίειτε;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>¿Si, una botella de vino blanco.</b> <br><br>
+    «Ναι, ένα μπουκάλι κόκκινο κρασί.»
+    </p>
+
+    <p class="right-dialogue">
+    <b>¿Podría tener un vaso de agua por favor?</b> <br><br>
+    «Θα μπορούσα να έχω ένα ποτήρι νερό παρακαλώ;»
+    </p>
+
+    <p class="left-dialogue">
+    <b>¡Claro que si!</b> <br><br>
+    «Φυσικά και ναι!»
+    </p>
+
+    <p class="right-dialogue">
+    <b>¡La cuenta, por favor!</b> <br><br>
+    «Τον λογαριασμό, παρακαλώ!»
+    </p>
+
+    <p class="left-dialogue">
+    <b>Cincuenta y dos euros. ¿Cómo quiere pagar, con tarjeta o en efectivo?</b> <br><br>
+    «52 ευρώ. Πως θα πληρώσετε, με κάρτα ή μετρητά;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Con tarjeta.</b> <br><br>
+    «Με κάρτα.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>Muchas gracias, ¡adiós!</b> <br><br>
+    «Σας ευχαριστούμε πολύ, αντίο!»
+    </p>
+
+    `,
+
+    `
+    <p>
+    Σε μια ξένη χώρα, είναι σημαντικό να μπορούμε να ζητάμε και να καταλαβαίνουμε οδηγίες. Με αυτόν τον τρόπο θα είσαι σε θέση να προσανατολιστείς καλύτερα, και να νιώσεις πιο άνετα κατά τη διάρκεια της διαμονής σου. Ας δούμε μερικές λέξεις και φράσεις που θα φανούν χρήσιμες για να βρεις τον δρόμο σου εάν χαθείς και να επικοινωνήσεις αποτελεσματικά.
+    </p>
 
 
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>¿Dónde está...?</td>
+                    <td>Που βρίσκεται...;</td>
+                </tr>
+                <tr>
+                    <td>¿Cómo puedo ir a...?</td>
+                    <td>Πως μπορώ να πάω...;</td>
+                </tr>
+                <tr>
+                    <td>¿Puede ayudarme? (πουέδε αγιουδαρμε)</td>
+                    <td>Μπορείς να με βοηθήσεις; (ενικος ευγενίας)</td>
+                </tr>
+                <tr>
+                    <td>Estoy perdido/perdida... (Εστόι περδίδο/α)</td>
+                    <td>Έχω χαθεί</td>
+                </tr>
+                <tr>
+                    <td>¿Qué dirección debo tomar? (κε ντιρεξιόν ντεμπο τομάρ)</td>
+                    <td>Ποια κατεύθυνση πρέπει να πάρω;</td>
+                </tr>
+                <tr>
+                    <td>¿Cómo llego a...? (κόμο γιέγο α)</td>
+                    <td>Πως θα φτάσω...;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    `,
+
+    `
+    <p>
+    Εδώ αξίζει να αναφέρουμε κάποιες ακόμα εκφράσεις που θα μας βοηθήσουν στις οδηγίες, όπως μπροστά, πίσω, αριστερά, δεξιά, κλπ.
+    </p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Delante (de)</td>
+                    <td>Από μπροστά</td>
+                    <td>A la derecha</td>
+                    <td>Στα δεξια</td>
+                </tr>
+                <tr>
+                    <td>Detrás (de) / Atrás</td>
+                    <td>Από πίσω</td>
+                    <td>A la izquierda</td>
+                    <td>Στα αριστερά</td>
+                </tr>
+                <tr>
+                    <td>Debajo (de)</td>
+                    <td>Από κάτω</td>
+                    <td>Al lado (de)</td>
+                    <td>Δίπλα σε</td>
+                </tr>
+                <tr>
+                    <td>Encima (de)</td>
+                    <td>Από πάνω</td>
+                    <td>Enfrente (de)</td>
+                    <td>Απέναντι από</td>
+                </tr>
+                <tr>
+                    <td>Dentro (de) </td>
+                    <td>Μέσα</td>
+                    <td>Cerca (de)</td>
+                    <td>Κοντά σε</td>
+                </tr>
+                <tr>
+                    <td>Fuera (de)</td>
+                    <td>Έξω</td>
+                    <td>Lejos (de)</td>
+                    <td>Μακριά</td>
+                </tr>
+                <tr>
+                    <td>Entre </td>
+                    <td>Ανάμεσα</td>
+                    <td>Recto</td>
+                    <td>Ευθεία</td>
+                </tr>
+                <tr>
+                    <td>Aquí</td>
+                    <td>Εδώ</td>
+                    <td>Allí</td>
+                    <td>Εκεί</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    `,
+
+    `
+    <p>
+    Ας δούμε και κάποια σημεία αναφοράς, όπως δρόμοι, πλατείες,φανάρια,κλπ.
+    </p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>La calle (κάγιε)</td>
+                    <td>Δρόμος</td>
+                    <td>Parada de autobús</td>
+                    <td>Στάση λεωφορείου</td>
+                </tr>
+                <tr>
+                    <td>La plaza (πλάθα)</td>
+                    <td>πλατεία</td>
+                    <td>Coger el tranvía</td>
+                    <td>Παίρνω το τραμ</td>
+                </tr>
+                <tr>
+                    <td>El parque (πάρκε)</td>
+                    <td>Πάρκο</td>
+                    <td>El metro/tren</td>
+                    <td>Μετρό – τραίνο</td>
+                </tr>
+                <tr>
+                    <td>La calle peatonal</td>
+                    <td>Πεζόδρομος</td>
+                    <td>La estación (εσταθιόν)</td>
+                    <td>Σταθμός</td>
+                </tr>
+                <tr>
+                    <td>El hotel (οτέλ)</td>
+                    <td>Ξενοδοχείο</td>
+                    <td>La farmacia (φαρμαθία)</td>
+                    <td>Φαρμακείο</td>
+                </tr>
+                <tr>
+                    <td>El restaurante</td>
+                    <td>Εστιατόριο</td>
+                    <td>El hospital (οσπιτάλ)</td>
+                    <td>Νοσοκομείο</td>
+                </tr>
+                <tr>
+                    <td>El museo (μουζέο)</td>
+                    <td>Μουσείο</td>
+                    <td>El teatro (τεάτρο)</td>
+                    <td>Θέατρο</td>
+                </tr>
+                <tr>
+                    <td>La iglesia (ιγκλέσια)</td>
+                    <td>Εκκλησία</td>
+                    <td>En la esquina (εσκίνα)</td>
+                    <td>Στη γωνία</td>
+                </tr>
+                <tr>
+                    <td>El semáforo </td>
+                    <td>Φανάρι</td>
+                    <td>La señal de tráfico (σενιάλ ντε τράφικο)</td>
+                    <td>Οδική πινακίδα</td>
+                </tr>
+                <tr>
+                    <td>La carnicería (καρνιθερία)</td>
+                    <td>Κρεοπωλείο</td>
+                    <td>La panadería</td>
+                    <td>Φούρνος</td>
+                </tr>
+                <tr>
+                    <td>La tienda (τιέντα)</td>
+                    <td>Μαγαζί</td>
+                    <td>El centro comercial (θεντρο κομερσιάλ)</td>
+                    <td>Εμπορικό κέντρο</td>
+                </tr>
+                <tr>
+                    <td>El billete (μπιγιέτε)</td>
+                    <td>Εισιτήριο</td>
+                    <td>El mapa</td>
+                    <td>Χάρτης</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    `,
+
+    `
+    <p>Κάποιες ακόμα φράσεις για τα μέσα μεταφοράς.</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>¿Dónde está la estación de...? (ντόντε εστά λα εσταθιόν ντε)</td>
+                    <td>Που είναι η στάση του...;</td>
+                </tr>
+                <tr>
+                    <td>¿A qué hora sale el autobús?
+                    (α κιε όρα σάλε ελ αουτομπούς)</td>
+                    <td>Τι ώρα αναχωρεί το λεωφορείο;</td>
+                </tr>
+                <tr>
+                    <td>¿Dónde puedo comprar un billete?
+                    (ντόντε πουέδο κομπραρ ουν μπιγιέτε)</td>
+                    <td>Που μπορώ να αγοράσω ένα εισιτήριο;</td>
+                </tr>
+                <tr>
+                    <td>Un billete de ida y vuelta, por favor. (ουν μπιγιέτε ντε ίδα η βουέλτα πορ φαβορ)</td>
+                    <td>Ένα εισιτήριο μετ’ επιστροφής, παρακαλώ.</td>
+                </tr>
+                <tr>
+                    <td>¿Cuánto cuesta el billete? (κουάντο κουέστα ελ μπιγιέτε)</td>
+                    <td>Πόσο κοστίζει το εισιτήριο;</td>
+                </tr>
+                <tr>
+                    <td>El primero / La primera (πριμέρο/α)</td>
+                    <td>Το πρώτο / Η πρώτη</td>
+                </tr>
+                <tr>
+                    <td>El segundo / La segunda (σεγούντο/α)</td>
+                    <td>Το δεύτερο / Η δεύτερη</td>
+                </tr>
+                <tr>
+                    <td>El tercero / La tercera (τερθέρο/α)</td>
+                    <td>Το τρίτο / Η τρίτη</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    `,
+
+    `
+    <p>
+    Και πριν δούμε παράδειγμα συζήτησης μεταξύ ενός τουρίστα και ενός ντόπιου, ας αναφερθούμε συνοπτικά στα ποσοτικά επιρρήματα:
+    </p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Demasiado </td>
+                    <td>υπερβολική ποσότητα</td>
+                    <td>Mucho</td>
+                    <td>μεγάλη ποσότητα</td>
+                </tr>
+                <tr>
+                    <td>Suficiente</td>
+                    <td>αναγκαία ποσότητα</td>
+                    <td>Poco</td>
+                    <td>μικρή ποσότητα</td>
+                </tr>
+                <tr>
+                    <td>Más</td>
+                    <td>περισσότερο</td>
+                    <td>Menos</td>
+                    <td>λιγότερο</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>
+    Καθώς και τον συγκριτικό και υπερθετικό βαθμό:
+    </p>
+
+    <div style="display: flex; gap: 5px;">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ισπανικά</th>
+                        <th>Ελληνικά</th>
+                        <th>Ισπανικά</th>
+                        <th>Ελληνικά</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Menor</b></td>
+                        <td>Μικρότερο (σε ηλικία)</td>
+                        <td><b>Mejor</b></td>
+                        <td>Καλύτερο</td>
+                    </tr>
+                    <tr>
+                        <td><b>Mayor</b></td>
+                        <td>Μεγαλύτερο (σε ηλικία)</td>
+                        <td><b>Peor</b></td>
+                        <td>Χειρότερο</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ισπανικά</th>
+                        <th>Ελληνικά</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Mejor</b></td>
+                        <td>Καλύτερο</td>
+                    </tr>
+                    <tr>
+                        <td><b>Peor</b></td>
+                        <td>Χειρότερο</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    `,
+
+    `
+    <p>
+    Ας δούμε τώρα μερικά παραδείγματα ατόμων που ζητάνε οδηγίες.
+    </p>
+
+    <p class="left-dialogue">
+    <b>Discúlpame, ¿dónde está la plaza Mayor?</b> <br><br>
+    «Με συγχωρείτε, πού είναι η πλατεία Μαγιόρ;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Está muy cerca, sigue recto por dos cuadras, y va a la derecha de la farmacia.</b> <br><br>
+    Είναι πολύ κοντά, συνέχισε ευθεία για δύο τετράγωνα, και μετά δεξιά στο φαρμακείο.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>¡Muchas gracias, señor!</b> <br><br>
+    «Ευχαριστώ πολύ κύριε»
+    </p>
+
+    <p class="right-dialogue">
+    <b>De nada</b> <br><br>
+    «Παρακαλώ.»
+    </p>
+    `,
+
+    `
+    <p class="left-dialogue">
+    <b>Perdón, ¿cómo puedo ir al museo?</b> <br><br>
+    «Συγνώμη, πως μπορώ να πάω στο μουσείο;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>El museo es un poco lejos. Necesita coger el metro por tres paradas. Después de salir, sigue recto por cinco cuadras, y lo verás a la izquierda.</b> <br><br>
+    «Το μουσείο είναι λίγο μακριά. Χρειάζεται να πάρεις το μετρό για 3 στάσεις. Αφού βγεις, συνέχισε ευθεία για 5 τετράγωνα, και θα το δείς στα αριστερά.
+    </p>
+
+    <p class="left-dialogue">
+    <b>Vale, entiendo. Muchas gracias por su ayuda.</b> <br><br>
+    «Εντάξει, καταλαβαίνω. Ευχαριστώ πολύ για την βοήθειά σας!»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Nada, buenas tardes.</b> <br><br>
+    «Τίποτα, καλό μεσημέρι.»
+    </p>
+    `,
     
 ];
 
