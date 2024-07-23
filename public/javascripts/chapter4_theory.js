@@ -947,6 +947,361 @@ const chapter4_theory = [
     «Τίποτα, καλό μεσημέρι.»
     </p>
     `,
+
+    `
+    <p>
+    Οι περισσότεροι άνθρωποι συνήθως πριν φύγουν από μια χώρα, πηγαίνουν για ψώνια στα καταστήματα για σουβενιρ, ρούχα και παπούτσια, ακόμα και παιχνίδια. Οπότε ας δούμε βασικές λέξεις και φράσεις που θα μας βοηθήσουν να κινηθούμε στα μαγαζιά.
+    </p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cliente/a</td>
+                    <td>Πελάτης</td>
+                    <td>La tienda...</td>
+                    <td>Κατάστημα</td>
+                </tr>
+                <tr>
+                    <td>Dependiente/a</td>
+                    <td>Υπάλληλος</td>
+                    <td>de decoración</td>
+                    <td>Διακόσμησης</td>
+                </tr>
+                <tr>
+                    <td>El probador</td>
+                    <td>Δοκιμαστήριο</td>
+                    <td>de deportes</td>
+                    <td>Αθλητικών</td>
+                </tr>
+                <tr>
+                    <td>La ropa</td>
+                    <td>Ρούχα</td>
+                    <td>de electrodomésticos</td>
+                    <td>Με ηλεκτρικά είδη</td>
+                </tr>
+                <tr>
+                    <td>De caballero</td>
+                    <td>Ανδρικά</td>
+                    <td>de regalos</td>
+                    <td>Δώρων</td>
+                </tr>
+                <tr>
+                    <td>De señora</td>
+                    <td>Γυναικεία</td>
+                    <td>Ponerse</td>
+                    <td>Βάζω</td>
+                </tr>
+                <tr>
+                    <td>La sección</td>
+                    <td>Τμήμα</td>
+                    <td>Probarse</td>
+                    <td>Δοκιμάζω</td>
+                </tr>
+                <tr>
+                    <td>La talla</td>
+                    <td>μέγεθος</td>
+                    <td>Sentar bien/mal</td>
+                    <td>Κάθεται καλά/κακά</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>
+    <b>Σημείωση</b>: Τα ρήματα ponerse, probarse είναι σε παθητική φωνή. Δεν το έχουμε δει σαν γραμματική γιατί είναι πιο προχωρημένο το επίπεδο, ωστόσο μπορείς να τα χρησιμοποιήσεις με τον τρόπο που θα δεις στα παραδείγματα που ακολουθούν. Στο μεταξύ ας δούμε λίγες λέξεις που αφορούν τα είδη ένδυσης.
+    </p>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>El abrigo (αμπρίγκο)</td>
+                    <td>Παλτό</td>
+                    <td>La cazadora (καθαδόρα)</td>
+                    <td>Μπουφάν</td>
+                </tr>
+                <tr>
+                    <td>El bañador/bikini</td>
+                    <td>Μαγιό</td>
+                    <td>La gorra</td>
+                    <td>Καπέλο</td>
+                </tr>
+                <tr>
+                    <td>Las botas</td>
+                    <td>Μπότες</td>
+                    <td>El gorro</td>
+                    <td>Σκουφί</td>
+                </tr>
+                <tr>
+                    <td>Los calzoncillos (καλθονσιγιος)</td>
+                    <td>Εσώρουχα</td>
+                    <td>Los guantes (γκουάντες)</td>
+                    <td>Γάντια</td>
+                </tr>
+                <tr>
+                    <td>La bufanda</td>
+                    <td>Κασκόλ</td>
+                    <td>Las medias</td>
+                    <td>Καλσόν</td>
+                </tr>
+                <tr>
+                    <td>Los calcetines (καλσετινες)</td>
+                    <td>Κάλτσες</td>
+                    <td>La camisa (καμίσα)</td>
+                    <td>Πουκάμισο</td>
+                </tr>
+                <tr>
+                    <td>El sombrero (σομπρέρο)</td>
+                    <td>Καπέλο</td>
+                    <td>El pijama</td>
+                    <td>Πιτζάμα</td>
+                </tr>
+                <tr>
+                    <td>El sujetador (σουχεταδόρ)</td>
+                    <td>Σουτιέν</td>
+                    <td>El traje (τράχε)</td>
+                    <td>Κουστούμι</td>
+                </tr>
+                <tr>
+                    <td>La camiseta</td>
+                    <td>Μπλουζάκι</td>
+                    <td>Los zapatos (θάπατος)</td>
+                    <td>Παπούτσια</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    `,
+
+    `
+    <p>
+    Και τώρα, ας δούμε κάποιες βασικές φράσεις που θα βοηθήσουν στη διαδικασία των ψώνιων.
+    </p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>¿Puedo probarme esto? (πουέδο προμπάρ με έστο)</td>
+                    <td>Μπορώ να το δοκιμάσω αυτό;</td>
+                </tr>
+                <tr>
+                    <td>¿Tienen una talla más grande/pequeña? (Τιένεν ούνα τάγια μας γκράντε / πεκιένια)</td>
+                    <td>Έχετε ένα νούμερο μεγαλύτερο/μικρότερο;</td>
+                </tr>
+                <tr>
+                    <td>¿Hay descuentos? (Άι ντεσκουέντος)</td>
+                    <td>Έχει εκπτώσεις;</td>
+                </tr>
+                <tr>
+                    <td>¿Cuánto cuesta? (Κουάντο κούεστα)</td>
+                    <td>Πόσο κοστίζει;</td>
+                </tr>
+                <tr>
+                    <td>Sólo estoy mirando. (Σόλο εστόι μιράντο)</td>
+                    <td>Μόνο κοιτάω.</td>
+                </tr>
+                <tr>
+                    <td>¿Dónde están los probadores?(Ντόντε εστάν λος προμπαδόρες)</td>
+                    <td>Πού είναι τα δοκιμαστήρια;</td>
+                </tr>
+                <tr>
+                    <td>¿Tiene otro color? (Τιένε ότρο κολόρ)</td>
+                    <td>Έχετε άλλο χρώμα;</td>
+                </tr>
+                <tr>
+                    <td>¿Hay garantía? (Άι γκαραντία)</td>
+                    <td>Έχει εγγύηση;</td>
+                </tr>
+                <tr>
+                    <td>Voy a comprarlo/la. (Βόι α κομπράρ λο/λα)</td>
+                    <td>Θα το αγοράσω.</td>
+                </tr>
+                <tr>
+                    <td>Me queda bien/mal. (Με κιέδα μπιέν/μάλ)</td>
+                    <td>Μου κάθεται καλά/άσχημα.</td>
+                </tr>
+                <tr>
+                    <td>¿Aceptan tarjetas de crédito? (Αξέπταν ταρχέτας ντε κρέντιτο)</td>
+                    <td>Δέχεστε πιστωτικές κάρτες;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    `,
+    
+    `
+    <p>
+    Είναι μια καλή ευκαιρία να δούμε και πως λέγονται τα χρώματα.
+    </p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                    <th>Ισπανικά</th>
+                    <th>Ελληνικά</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Negro</td>
+                    <td>Μαύρο</td>
+                    <td>Rojo (ρόχο)</td>
+                    <td>Κόκκινο</td>
+                </tr>
+                <tr>
+                    <td>Blanco</td>
+                    <td>Άσπρο</td>
+                    <td>Rosado</td>
+                    <td>Ροζ</td>
+                </tr>
+                <tr>
+                    <td>Gris (γκρις)</td>
+                    <td>Γκρι</td>
+                    <td>Morado </td>
+                    <td>Μωβ</td>
+                </tr>
+                <tr>
+                    <td>Marrón (μαρόν)</td>
+                    <td>Καφέ</td>
+                    <td>Azul (αθούλ)</td>
+                    <td>Μπλε</td>
+                </tr>
+                <tr>
+                    <td>Amarillo (αμαρίγιο)</td>
+                    <td>Κίτρινο</td>
+                    <td>Verde (βέρδε)</td>
+                    <td>Πράσινο</td>
+                </tr>
+                <tr>
+                    <td>Anaranjado (αναραχάνδο)</td>
+                    <td>Πορκοκαλί</td>
+                    <td>Celeste</td>
+                    <td>Γαλαζιο</td>
+            </tbody>
+        </table>
+    </div>
+
+    <p> Ακολουθούν και λίγα παραδείγματα σεναρίων επικοινωνίας για εξοικίωση</p>
+    `,
+
+    `
+    <p class="left-dialogue">
+    <b>¿Tiene esa camiseta en azul?</b> <br><br>
+    «Υπάρχει εκείνη η μπλούζα σε μπλε;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Si, claro. Desde aquí por favor.</b> <br><br>
+    «Ναι φυσικά. Από εδώ παρακαλώ.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>Perfecto. ¿Dónde están los probadores?</b> <br><br>
+    «Τέλεια. Που είναι τα δοκιμαστήρια;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Al lado del aseo, a la derecha de la sección de señores.</b> <br><br>
+    «Δίπλα στις τουαλέτες, δεξιά από το γυναικείο τμήμα.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>¡Muchas gracias!</b> <br><br>
+    «Ευχαριστώ πολύ!»
+    </p>
+    `,
+
+    `
+    <p class="left-dialogue">
+    <b>Buenos días, ¿cómo puedo ayudarle hoy?</b> <br><br>
+    «Καλημέρα, πως μπορώ να σας βοηθήσω σήμερα;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Está bien, sólo estoy mirando.</b> <br><br>
+    «Όλα καλά, απλά κοιτάζω.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>Sí quiere algo, pregunta me, ¿vale?</b> <br><br>
+    «Αν θέλετε κάτι, ρωτήστε με, εντάξει;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>¡Claro!</b> <br><br>
+    «Φυσικά!»
+    </p>
+    
+    `,
+
+    `
+    <p class="left-dialogue">
+    <b>Perdón, ¿tiene estos zapatos una talla más pequeña?</b> <br><br>
+    «Συγνώμη, έχετε αυτά τα παπούτσια ένα νούμερο μικρότερο;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Voy a buscar, y le digo en cinco minutos.</b> <br><br>
+    «Θα ψάξω, και θα σας πω σε 5 λεπτά.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>Gracias.</b> <br><br>
+    «Ευχαριστώ.»
+    </p>
+    `,
+
+    `
+
+    <p class="left-dialogue">
+    <b>¿Cuánto cuesta este traje completo?</b> <br><br>
+    «Πόσο κοστίζει αυτό το κουστούμι ολόκληρο;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>Hay descuentos, sólo 150 euro.</b> <br><br>
+    «Έχει εκπτώσεις, μόνο 150 ευρώ.»
+    </p>
+
+    <p class="left-dialogue">
+    <b>¿Aceptan tarjetas de crédito?</b> <br><br>
+    «Δέχεστε πιστωτικές κάρτες;»
+    </p>
+
+    <p class="right-dialogue">
+    <b>¡Claro!</b> <br><br>
+    «Φυσικά!»
+    </p>
+    
+    `,
+
     
 ];
 
