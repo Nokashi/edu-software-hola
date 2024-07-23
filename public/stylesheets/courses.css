@@ -187,3 +187,23 @@ tr:nth-child(even) td {
     background-color: #dbd8d8;
     color: #000;
 }
+
+.left-dialogue {
+    align-self: flex-start;
+    text-align: left;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.right-dialogue {
+    align-self: flex-end;
+    text-align: right;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 40%;
+}
