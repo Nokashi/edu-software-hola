@@ -80,28 +80,28 @@
         <main class="main-content">
             <div class="course-container">
                 <div class="course">
-                    <h2>Course 1</h2>
-                    <p>Description of Course 1</p>
-                    <p>Level: Easy</p>
-                    <a class="button" href="courses/1">Go to Course</a>
+                    <h2>Ενότητα 1</h2>
+                    <p>Ιστορία της Ισπανίας</p>
+                    <a class="button" href="courses/1">¡Vamos!</a>
                 </div>
                 <div class="course">
-                    <h2>Course 2</h2>
-                    <p>Description of Course 2</p>
-                    <p>Level: Medium</p>
-                    <a class="button" href="courses/2">Go to Course</a>
+                    <h2>Ενότητα 2</h2>
+                    <p>Ισπανική Κουλτούρα</p>
+                    <a class="button" href="courses/2">¡Vamos!</a>
                 </div>
                 <div class="course">
-                    <h2>Course 3</h2>
-                    <p>Description of Course 3</p>
-                    <p>Level: Easy</p>
-                    <a class="button" href="courses/3">Go to Course</a>
+                    <h2>Ενότητα 3</h2>
+                    <p>Ισπανική Γραμματική</p>
+                    <a class="button" href="courses/3">¡Vamos!</a>
                 </div>
                 <div class="course">
-                    <h2>Course 4</h2>
-                    <p>Description of Course 4</p>
-                    <p>Level: Easy</p>
-                    <a class="button" href="courses/4">Go to Course</a>
+                    <h2>Ενότητα 4</h2>
+                    <% if(hasCompleted_ch3) {%>
+                        <p>Ισπανικό Λεξιλόγιο και Σενάρια Επικοινωνίας</p>
+                        <a class="button" href="courses/4">¡Vamos!</a>
+                    <% } else { %>
+                        <p>Επ! Μην βιάζεσαι! Η Ενότητα αυτή θα ξεκλειδωθεί οταν γίνει τουλάχιστον ενα quiz της Ενοτητας 3!</p>
+                    <% } %>
                 </div>
             </div>
         </main>
