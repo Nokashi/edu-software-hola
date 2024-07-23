@@ -169,3 +169,24 @@ header {
   flex-direction: column;
 }
 
+.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.slides {
+  display: none;
+  max-width: 900px;
+  height: auto;
+}
+

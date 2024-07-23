@@ -48,12 +48,6 @@
                             <span class="material-symbols-outlined"> dashboard </span>Ενότητες</a>
                         <div class="menu-separator"></div>
                     </li>
-                    <% } else { %>
-                    <li>
-                        <a href="/courses-preview">
-                            <span class="material-symbols-outlined"> dashboard </span>Ενότητες</a>
-                        <div class="menu-separator"></div>
-                    </li>
                     <% } %>
                     <% if (isAuthenticated) { %>
                     <li>
@@ -77,19 +71,17 @@
             </aside>
         </div>
         <main class="main-content">
-            <h1>Hello</h1>
-            <div class="slideshow-container">
-                <% images.forEach((image, index) => { %>
-                    <div class="slides">
-                        <img src="images/<%= image %>">
-                    </div>
-                <% }) %>
-                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+            <h1 style="align-self: center;">Καλωσήρθες και πάλι, <%= user.username %>!</h1>
+            <div class="container-main">
+                <div class="did-you-know-box">
+                    <div class="did-you-know-title"><b>Το Ήξερες?</b></div>
+                    <div id="did-you-know-fact" class="did-you-know-fact"></div>
+                </div>
+                <div class="retention-box">
+                    <p>Πάμε για μία γρήγορη επανάληψη σε ότι έχεις μελετήσει μεχρι τωρα!</p>
+                    <a href="quizzes/retention" class="signup-button">Επαναληπτικο Quiz</a>
+                </div>
             </div>
-
-            <p style="margin-left: 10px;">Learn spanish right now !</p>
-            
         </main>
         <footer>
             <p>Απαλλακτική Εργασία "Εκπαιδευτικό Λογισμικό" - 2024<br><br>
@@ -98,5 +90,6 @@
             </p>
         </footer>
         <script src="javascripts/slideshow.js"></script> 
+        <script src="javascripts/trivia.js"></script> 
     </body>
 </html>

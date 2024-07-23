@@ -94,7 +94,6 @@ header {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.695); /* Semi-transparent background for readability */
   }
 
@@ -109,12 +108,13 @@ header {
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    width: 50%;
     padding: 10px;
 }
 
 .slides {
     display: none;
+    max-width: 900px;
+    height: auto;
 }
 
 .prev, .next {
@@ -142,7 +142,61 @@ header {
 }
 
 .responsive-image {
-  max-width: 100%;
+  max-width: 50%;
+  width: 30%;
   height: auto;
 }
 
+
+.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.did-you-know-box {
+  background-color: #ffc400;
+  border: 2px solid #c60b1e;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.did-you-know-title {
+  font-size: 24px;
+  color: #c60b1e;
+}
+.did-you-know-fact {
+  font-size: 18px;
+  color: #333333;
+}
+
+.signup-button {
+  background-color: #c60b1e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  max-width: 150px;
+  align-self: center;
+  text-align: center;
+}
+
+
+.retention-box {
+  background-color: #ffc400;
+  border: 2px solid #c60b1e;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}

@@ -275,4 +275,101 @@ exports.submit_quiz = asyncHandler(async (req, res, next) => {
     res.render('quiz_results', {percentageScore, correct_answers, totalQuestions, results_message})
 });
 
+exports.retentionQuiz =  asyncHandler(async (req, res, next) => {
+
+    const userId = req.user._id
+    const userData = await User.findById(userId);
+    const completedChapters = new Set();
+
+    userData.performance_history.forEach((record) => {
+        completedChapters.add(record.quiz_chapter);
+    });
+
+    const questions = await Question.aggregate([
+        { $match: { chapter: { $in: Array.from(completedChapters) } } },
+        { $sample: { size: 10 } }
+    ]);
+
+    console.log(questions)
+    res.render('quiz', {questions});
+});
+
+exports.submit_quiz_retention = asyncHandler(async (req, res, next) => {
+    const answers = req.body
+
+    const weights = {
+        'Easy': 1,
+        'Hard': 2
+    };
+
+    // Initialize an empty object to store extracted answers
+    const userAnswers = {};
+    let userID;
+    // Iterate over the keys in answers object
+    for (const key in answers) {
+        // Check if the key is not 'userId'
+        if (key == 'userId')
+        {
+            userID = answers[key]
+        }
+        if (key !== 'userId') {
+            // Extract the questionId from the key
+            const questionId = key.match(/\[(.*?)\]/)[1];
+            // Assign the answer to the corresponding questionId in userAnswers
+            userAnswers[questionId] = answers[key];
+        }
+    }
+    
+    console.log(userAnswers);
+    console.log(userID)
+
+    const questionIds = Object.keys(userAnswers);
+    const questions = await Question.find({ _id: { $in: questionIds } });
+
+    console.log(questions)
+
+    let score = 0;
+    let max_score = 0;
+    let totalQuestions = questions.length;
+    let correct_answers = 0;
+
+    // Compare the submitted answers with the correct answers
+    questions.forEach(question => {
+        if (userAnswers[question._id] === question.correctAnswer) {
+            score += weights[question.difficulty_level];
+            correct_answers++
+        }
+        max_score += weights[question.difficulty_level]
+    });
+
+    // Calculate the percentage score
+    const percentageScore = (score / max_score) * 100;
+
+    // Update the user's performance history and average grade
+    const user = await User.findById(userID);
+    user.performance_history.push({
+        quiz_chapter: 0, // Assuming all questions are from the same chapter
+        grade: percentageScore,
+        quiz_date: new Date()
+    });
+
+    user.average_grade = user.performance_history.reduce((sum, record) => sum + record.grade, 0) / user.performance_history.length;
+    avg_grade = user.average_grade;
+    await user.save();
+
+    let results_message;
+
+    if (percentageScore >= 90) {
+
+        results_message = "Μπράβο σου! τα πήγες περίφημα!"
+    } else if (percentageScore >= 60)
+    {
+        results_message = "Πάρα πολύ καλή προσπάθεια! Συνέχισε έτσι."
+    }
+    else {
+        results_message = "Μάλλον θα πρέπει να κάνουμε λίγο ακόμα επανάληψη. Με μεθοδικότητα θα τα πας ακομα καλύτερα την επόμενη φορα!"
+    }
+
+    res.render('quiz_results', {percentageScore, correct_answers, totalQuestions, results_message})
+});
 

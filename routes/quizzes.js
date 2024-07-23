@@ -18,14 +18,18 @@ router.get('/4', quizController.quiz4);
 
 router.get('/5', quizController.quizAll);
 
-router.post('/1', quizController.submit_quiz)
+router.get('/retention', quizController.retentionQuiz);
 
-router.post('/2', quizController.submit_quiz)
+router.post('/1', quizController.submit_quiz);
 
-router.post('/3', quizController.submit_quiz)
+router.post('/2', quizController.submit_quiz);
 
-router.post('/4', quizController.submit_quiz)
+router.post('/3', quizController.submit_quiz);
 
-router.post('/5', quizController.submit_quiz)
+router.post('/4', quizController.submit_quiz);
+
+router.post('/5', quizController.submit_quiz);
+
+router.post('/retention', quizController.submit_quiz_retention);
 
 module.exports = router;
