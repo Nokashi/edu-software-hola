@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Navigation Bar</title>
+        <title>Εκπαιδευτικη Εφαρμογη!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="registration page">
         <link rel="stylesheet" href="stylesheets/nav_style.css">
@@ -22,8 +22,6 @@
                     <% } else { %>    
                         <h2>¡Hola!</h2>
                     <% } %>
-                </header>
-                    
                 </div>
                 <ul class="sidebar-links">
                     <h4>Μενού</h4>
@@ -79,16 +77,18 @@
             </aside>
         </div>
         <main class="main-content">
+            <h1>Hello</h1>
             <div class="slideshow-container">
                 <% images.forEach((image, index) => { %>
                     <div class="slides">
                         <img src="images/<%= image %>">
                     </div>
                 <% }) %>
-        
                 <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
             </div>
+
+            <p style="margin-left: 10px;">Learn spanish right now !</p>
             
         </main>
         <footer>

@@ -8,7 +8,7 @@ exports.landing_page = asyncHandler(async (req, res, next) => {
 */
 
 exports.landing_page_bill = asyncHandler(async (req, res, next) => {
-    images = ['andalucia.webp', 'barcelona.webp', 'granada.jpg', 'madrid.jpg']
+    images = ['escorial.jpg', 'prado.jpg', 'guell.jpg', 'segrada.jpg']
     res.render('nav_menu', {images});
 })
 

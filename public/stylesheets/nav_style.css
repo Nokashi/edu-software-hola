@@ -106,10 +106,12 @@ header {
   }
 
 
-  .slideshow-container {
+.slideshow-container {
     position: relative;
     max-width: 100%;
-    margin: auto;
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
 }
 
 .slides {
@@ -139,3 +141,9 @@ header {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+

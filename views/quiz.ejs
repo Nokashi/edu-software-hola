@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz Εξάσκησης</title>
     <link rel="stylesheet" href="../stylesheets/quizStyle.css">
 </head>
 <body>
     <div class="container">
-        <h1>Quiz</h1>
+        <h1 style="color: antiquewhite;">Απάντησε στις παρακάτω ερωτήσεις πολλαπλής επιλογής</h1>
         <form method="post" id="quiz-form">
             <% questions.forEach(question => { %>
                 <div class="question">
@@ -22,7 +22,7 @@
                 </div>
             <% }); %>
             <input type="hidden" name="userId" value="<%= user._id %>">
-            <button type="submit">Submit Quiz</button>
+            <button type="submit">Υποβολή</button>
         </form>
     </div>
 </body>
