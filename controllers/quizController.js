@@ -83,7 +83,7 @@ exports.quiz2 = asyncHandler(async (req, res, next) => {
     if (quizzesCompleted < 3) {
         // If less than 3 quizzes completed, select 10 random questions
         questions = await Question.aggregate([
-            { $match: { chapter: 1 } },
+            { $match: { chapter: 2 } },
             { $sample: { size: 10 } }
         ]);
     } else {
@@ -123,7 +123,7 @@ exports.quiz3 = asyncHandler(async (req, res, next) => {
     if (quizzesCompleted < 3) {
         // If less than 3 quizzes completed, select 10 random questions
         questions = await Question.aggregate([
-            { $match: { chapter: 1 } },
+            { $match: { chapter: 3 } },
             { $sample: { size: 10 } }
         ]);
     } else {
@@ -163,7 +163,7 @@ exports.quiz4 = asyncHandler(async (req, res, next) => {
     if (quizzesCompleted < 3) {
         // If less than 3 quizzes completed, select 10 random questions
         questions = await Question.aggregate([
-            { $match: { chapter: 1 } },
+            { $match: { chapter: 4 } },
             { $sample: { size: 10 } }
         ]);
     } else {
