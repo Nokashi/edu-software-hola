@@ -78,8 +78,12 @@
                     <div id="did-you-know-fact" class="did-you-know-fact"></div>
                 </div>
                 <div class="retention-box">
-                    <p>Πάμε για μία γρήγορη επανάληψη σε ότι έχεις μελετήσει μεχρι τωρα!</p>
-                    <a href="quizzes/retention" class="signup-button">Επαναληπτικο Quiz</a>
+                    <% if (hasCompletedQuiz) { %>
+                        <p>Πάμε για μία γρήγορη επανάληψη σε ότι έχεις μελετήσει μεχρι τωρα!</p>
+                        <a href="quizzes/retention" class="signup-button">Επαναληπτικο Quiz</a>
+                    <% } else { %>
+                        <p>Εξασκήσου πρώτα σε τουλάχιστον ένα κεφάλαιο και μετά ελα πίσω για επανάληψη!</p>
+                    <% } %>
                 </div>
             </div>
         </main>
