@@ -425,7 +425,7 @@ const chapter3_theory = [
                 <tr>
                     <td>8: <b>ocho</b> (ότσο)</td>
                     <td>18: <b>dieciocho</b> (ντιέθι-ότσο)</td>
-                    <td>28: <b>veintiocho</b>/td>
+                    <td>28: <b>veintiocho</b></td>
                 </tr>
                 <tr>
                     <td>9: <b>nueve</b> (νουέβε)</td>
