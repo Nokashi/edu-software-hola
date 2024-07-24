@@ -506,7 +506,108 @@ db.once('open', async () => {
             text: 'Ποια ρήμα σημαίνει «λεω» στα ισπανικά;',
             options: ['Saber', 'Querer', 'Decir', 'Hablar'],
             correctAnswer: 'Decir'
-        }
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι το ισπανικό αντίστοιχο της λέξης «Που»;',
+            options: ['Cuál', 'Que', 'Dónde', 'Cuánto'],
+            correctAnswer: 'Dónde'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Ποιο λέγεται το ψωμί στα ισπανικά;',
+            options: ['Pan', 'Queso', 'Té', 'gamba'],
+            correctAnswer: 'Pan'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Τι σημαίνει «carne» στα ελληνικά;',
+            options: ['Ψάρι', 'Κρέας', 'Γαρίδα', 'Σκόρδο'],
+            correctAnswer: 'Κρέας'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι το ισπανικό αντίστοιχο της λέξης «Πόσο»;',
+            options: ['Cuál', 'Que', 'Dónde', 'Cuánto'],
+            correctAnswer: 'Cuánto'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Τι σημαίνει «carne» στα ελληνικά;',
+            options: ['Ψάρι', 'Κρέας', 'Γαρίδα', 'Σκόρδο'],
+            correctAnswer: 'Κρέας'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι το ισπανικό αντίστοιχο της λέξης παλτό;',
+            options: ['Abrigo', 'Bufanda', 'Camisa', 'Camiseta'],
+            correctAnswer: 'Abrigo'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Ποια φράση μεταφράζεται ως «Τι ώρα αναχωρεί το τραίνο»;',
+            options: ['¿A qué hora llega el autobús?', '¿Dónde está el autobús?', '¿A qué hora sale el autobús?', '¿Cuándo cuesta el autobús?'],
+            correctAnswer: '¿A qué hora sale el autobús?'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Συμπλήρωσε την φράση «¿___ puedo ir al museo?»',
+            options: ['Cuál', 'Cómo', 'Dónde', 'Cuándo'],
+            correctAnswer: 'Cómo'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Ποια φράση θα χρησιμοποιήσουμε για να παραγγείλουμε μια σαλάτα με κοτόπουλο;',
+            options: ['Quisiera una ensalada con carne', 'Quisiera unas tapas con mariscos', 'Querría una paella con pollo', 'Quisiera una ensalada con pollo'],
+            correctAnswer: 'Quisiera una ensalada con pollo'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Ποιο είναι το ισπανικό αντίστοιχο της λέξης «Πότε»;',
+            options: ['Cuál', 'Que', 'Dónde', 'Cuándo'],
+            correctAnswer: 'Cuándo'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Πως λέγεται το γάλα στα ισπανικά;',
+            options: ['leche', 'té', 'vino blanco', 'agua'],
+            correctAnswer: 'leche'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Πως μπορούμε να ζητήσουμε «ένα νούμερο μεγαλύτερο» στα ισπανικά;',
+            options: ['Un número más grande', 'Una talla más grande', 'Un número más pequeño', 'Una talla más pequeña'],
+            correctAnswer: 'Una talla más grande'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Πως λέμε «χρειάζεται να πάρεις το τραμ» στα ισπανικά;',
+            options: ['Necesito coger el tren', 'Necesita tomar el tren', 'Necesito coger el autobús', 'Necesita coger el tranvía'],
+            correctAnswer: 'Necesita coger el tranvía'
+        },
+        {
+            chapter: 4,
+            difficulty_level: 'Easy',
+            text: 'Τι σημαίνει «gazpacho» στα ισπανικά;',
+            options: ['Ορεκτικό', 'κυρίως πιάτο', 'Κρύα σούπα', 'Ζεστή σούπα'],
+            correctAnswer: 'Κρύα σούπα'
+        },
+        
+
+
     ];
     
 

@@ -192,7 +192,11 @@ exports.quiz4 = asyncHandler(async (req, res, next) => {
 });
 
 exports.quizAll = asyncHandler(async (req, res, next) => {
-    const questions = await Question.find();
+    
+    const questions = await Question.aggregate([
+        { $sample: { size: 25 } }
+    ]);
+
     res.render('quiz', {questions});
 });
 

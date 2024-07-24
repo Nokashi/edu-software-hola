@@ -49,7 +49,7 @@ const chapter4_theory = [
                 </tr>
                 <tr>
                     <td>Dónde</td>
-                    <td>Πότε</td>
+                    <td>Που</td>
                     <td>¿Dónde está el museo?</td>
                     <td>Πού είναι το μουσείο;</td>
                 </tr>
@@ -460,6 +460,12 @@ const chapter4_theory = [
                     <td>El atún (ατούν) </td>
                     <td>τόνος</td>
                 </tr>
+                <tr>
+                    <td> el leche (λέτσε) </td>
+                    <td> γαλα </td>
+                    <td></td>
+                    <td></td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -748,6 +754,12 @@ const chapter4_theory = [
                     <td>Εισιτήριο</td>
                     <td>El mapa</td>
                     <td>Χάρτης</td>
+                </tr>
+                <tr>
+                    <td>el supermercado</td>
+                    <td>σουπερ μαρκετ</td>
+                    <td>la bibliotéca</td>
+                    <td>βιβλιοθήκη</td>
                 </tr>
             </tbody>
         </table>
