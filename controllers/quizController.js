@@ -15,7 +15,7 @@ async function hasCompletedAllCourses(userId) {
         completedCourses.add(entry.quiz_chapter);
     });
 
-    return completedCourses.size >= 6;
+    return completedCourses.size == 5;
 }
 
 exports.quiz_list = asyncHandler(async (req, res, next) => {

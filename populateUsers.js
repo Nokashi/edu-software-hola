@@ -160,18 +160,19 @@ db.once('open', async () => {
             ]
         },
         {
-            first_name: 'Smarty',
-            surname: 'McSmartyPants',
-            email: 'i_am_smart@example.com',
-            username: 'smartypants',
-            year_of_birth: 2000,
-            password: 'smart',
+            first_name: 'Smart',
+            surname: 'McSmarty',
+            email: 'smart@example.com',
+            username: 'smartypants123',
+            year_of_birth: 1998,
+            password: '12345',
             average_grade: 95,
             performance_history: [
                 { quiz_chapter: 1, grade: 95 },
                 { quiz_chapter: 2, grade: 95 },
                 { quiz_chapter: 3, grade: 95 },
-                { quiz_chapter: 4, grade: 95 }
+                { quiz_chapter: 4, grade: 95 },
+                { quiz_chapter: 0, grade: 100 }
             ]
         }
     ];
